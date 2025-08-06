@@ -4,8 +4,12 @@
   "goodbye": "Goodbye",
   "navigation": {
     "home": "Home",
-    "about": "About",
-    "contact": "Contact"
+    "motPresident": "Chairman's Message",
+    "creationValeur": "Value Creation",
+    "ambitionsOrientations": "Ambitions & Strategic Orientations",
+    "performances": "Performances",
+    "perspectives": "Perspectives",
+    "ra2020pdf": "AR2020PDF"
   },
   "common": {
     "yes": "Yes",

@@ -30,6 +30,20 @@
         </div>
       </div>
     </section>
+    
+    <section id="performances" class="performances" data-aos="fade-up" data-aos-delay="500">
+      <h2>{{ $t('navigation.performances', 'Performances') }}</h2>
+      <div class="performances-content">
+        <div class="card">
+          <div class="card__header">
+            <h3>Performances 2020</h3>
+          </div>
+          <div class="card__content">
+            <p>Contenu des performances financières et opérationnelles à venir...</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -166,6 +180,22 @@ const features = ref([
 .feature-card p {
   color: #666;
   line-height: 1.6;
+}
+
+.performances {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.performances h2 {
+  font-size: 2.5rem;
+  color: #1369b4;
+  margin-bottom: 2rem;
+}
+
+.performances-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {

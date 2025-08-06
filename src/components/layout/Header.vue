@@ -35,8 +35,12 @@ const isMenuOpen = ref(false)
 
 const navItems = [
     // { path: '/', label: 'navigation.home' },
-    { path: '/about', label: 'navigation.about' },
-    { path: '/contact', label: 'navigation.contact' }
+    { path: '/mot-president', label: 'navigation.motPresident' },
+    { path: '/creation-valeur', label: 'navigation.creationValeur' },
+    { path: '/ambitions-orientations', label: 'navigation.ambitionsOrientations' },
+    { path: '/performances', label: 'navigation.performances' },
+    { path: '/perspectives', label: 'navigation.perspectives' },
+    { path: '/ra2020pdf', label: 'navigation.ra2020pdf' }
 ]
 
 const toggleMenu = () => {
@@ -82,15 +86,16 @@ const closeMenu = () => {
 .nav-link {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    // font-weight: 400;
     transition: color 0.3s ease;
-    padding: 0.5rem 1rem;
+    // padding: 0.5rem 1rem;
     border-radius: 6px;
     text-transform: uppercase;
+    font-size: .9em;
 
     &:hover,
     &.router-link-active {
-        color: white;
+        color: white !important;
     }
 }
 

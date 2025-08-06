@@ -4,8 +4,12 @@
   "goodbye": "Au revoir",
   "navigation": {
     "home": "Accueil",
-    "about": "À propos",
-    "contact": "Contact"
+    "motPresident": "Mot du Président",
+    "creationValeur": "Création de Valeur",
+    "ambitionsOrientations": "Ambitions & Orientations",
+    "performances": "Performances",
+    "perspectives": "Perspectives",
+    "ra2020pdf": "RA2020PDF"
   },
   "common": {
     "yes": "Oui",
