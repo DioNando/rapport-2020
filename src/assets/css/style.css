@@ -43,6 +43,87 @@
   --transition-fast: 0.15s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
+
+  /* Styles de base pour le mode sombre */
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--text-light);
+  background-color: var(--bg-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles de base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+  transition: color var(--transition-normal);
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.8em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+button {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+button:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 /* Classes utilitaires pour les couleurs */
@@ -145,6 +226,28 @@
     --text-primary: rgba(255, 255, 255, 0.87);
     --text-secondary: #cccccc;
     --border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Mode clair */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+  }
+  
+  a:hover {
+    color: #747bff;
+  }
+  
+  button {
+    background-color: #f9f9f9;
+    color: var(--text-primary);
+  }
+  
+  button:hover {
+    background-color: var(--primary-color);
+    color: white;
   }
 }
 
