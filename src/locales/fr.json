@@ -1,0 +1,18 @@
+{
+  "welcome": "Bienvenue",
+  "hello": "Bonjour",
+  "goodbye": "Au revoir",
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "common": {
+    "yes": "Oui",
+    "no": "Non",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier"
+  }
+}

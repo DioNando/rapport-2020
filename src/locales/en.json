@@ -1,0 +1,18 @@
+{
+  "welcome": "Welcome",
+  "hello": "Hello",
+  "goodbye": "Goodbye",
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit"
+  }
+}
