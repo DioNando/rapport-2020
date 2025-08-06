@@ -1,9 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import { useLanguage } from './composables/useLanguage'
 import { onMounted } from 'vue'
 
-const { currentLanguage, availableLanguages, changeLanguage, initLanguage, t } = useLanguage()
+const { initLanguage } = useLanguage()
 
 // Initialiser la langue au montage du composant
 onMounted(() => {
@@ -12,86 +11,59 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <!-- Sélecteur de langue -->
-    <div class="language-selector" data-aos="fade-down">
-      <button 
-        v-for="lang in availableLanguages"
-        :key="lang.code"
-        @click="changeLanguage(lang.code)" 
-        :class="{ active: currentLanguage === lang.code }"
-        class="lang-btn"
-      >
-        {{ lang.flag }} {{ lang.name }}
-      </button>
-    </div>
-
-    <!-- Titre avec traduction -->
-    <h1 data-aos="fade-up" data-aos-delay="200">
-      {{ $t('welcome') }}
-    </h1>
-
-    <div data-aos="fade-up" data-aos-duration="1000">
-      <a href="https://vite.dev" target="_blank">
-        <img src="/vite.svg" class="logo" alt="Vite logo" />
-      </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-      </a>
-    </div>
-  </div>
-  <div data-aos="fade-in" data-aos-delay="300">
-    <HelloWorld :msg="t('hello') + ' Vite + Vue'" />
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
-<style scoped>
-.language-selector {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
-  z-index: 1000;
+<style>
+/* Styles globaux pour l'application */
+#app {
+  min-height: 100vh;
 }
 
-.lang-btn {
-  padding: 8px 16px;
-  border: 2px solid #646cff;
-  background: transparent;
-  color: #646cff;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.3s ease;
+/* Animations globales pour les transitions de route */
+.router-link-active {
+  color: #646cff !important;
 }
 
-.lang-btn:hover {
+/* Amélioration du scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
   background: #646cff;
-  color: white;
+  border-radius: 4px;
 }
 
-.lang-btn.active {
-  background: #646cff;
-  color: white;
+::-webkit-scrollbar-thumb:hover {
+  background: #535bf2;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+/* Animations pour AOS */
+[data-aos] {
+  pointer-events: none;
 }
 
-h1 {
-  margin: 2rem 0;
-  font-size: 3.2em;
-  line-height: 1.1;
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Styles responsive globaux */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
 }
 </style>

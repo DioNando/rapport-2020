@@ -14,5 +14,72 @@
     "cancel": "Annuler",
     "delete": "Supprimer",
     "edit": "Modifier"
+  },
+  "home": {
+    "subtitle": "Une application Vue.js moderne avec les meilleures pratiques",
+    "learnMore": "En savoir plus",
+    "features": "Fonctionnalités",
+    "feature1": {
+      "title": "Performance",
+      "description": "Application rapide et optimisée avec Vite"
+    },
+    "feature2": {
+      "title": "International",
+      "description": "Support multilingue avec Vue I18n"
+    },
+    "feature3": {
+      "title": "Design",
+      "description": "Interface moderne avec animations fluides"
+    }
+  },
+  "about": {
+    "intro": "Découvrez notre projet et notre vision",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Créer des applications web modernes et performantes en utilisant les dernières technologies."
+    },
+    "technology": {
+      "title": "Technologies",
+      "description": "Nous utilisons Vue.js, Vite, et les meilleures pratiques du développement moderne."
+    },
+    "stats": {
+      "title": "En Chiffres",
+      "modern": "Moderne",
+      "fast": "Rapide",
+      "international": "International",
+      "beautiful": "Élégant"
+    }
+  },
+  "contact": {
+    "intro": "Nous serions ravis d'avoir de vos nouvelles",
+    "getInTouch": "Prenez Contact",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "sendMessage": "Envoyez-nous un message",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sujet de votre message",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "send": "Envoyer",
+      "sending": "Envoi..."
+    }
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "message": "Désolé, la page que vous recherchez n'existe pas.",
+    "backHome": "Retour à l'accueil",
+    "goBack": "Page précédente"
+  },
+  "footer": {
+    "description": "Une application Vue.js moderne avec les meilleures pratiques.",
+    "quickLinks": "Liens rapides",
+    "contact": "Contact",
+    "allRightsReserved": "Tous droits réservés."
   }
 }

@@ -14,5 +14,72 @@
     "cancel": "Cancel",
     "delete": "Delete",
     "edit": "Edit"
+  },
+  "home": {
+    "subtitle": "A modern Vue.js application with best practices",
+    "learnMore": "Learn more",
+    "features": "Features",
+    "feature1": {
+      "title": "Performance",
+      "description": "Fast and optimized application with Vite"
+    },
+    "feature2": {
+      "title": "International",
+      "description": "Multi-language support with Vue I18n"
+    },
+    "feature3": {
+      "title": "Design",
+      "description": "Modern interface with smooth animations"
+    }
+  },
+  "about": {
+    "intro": "Discover our project and our vision",
+    "mission": {
+      "title": "Our Mission",
+      "description": "Create modern and performant web applications using the latest technologies."
+    },
+    "technology": {
+      "title": "Technologies",
+      "description": "We use Vue.js, Vite, and modern development best practices."
+    },
+    "stats": {
+      "title": "By Numbers",
+      "modern": "Modern",
+      "fast": "Fast",
+      "international": "International",
+      "beautiful": "Beautiful"
+    }
+  },
+  "contact": {
+    "intro": "We would love to hear from you",
+    "getInTouch": "Get In Touch",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "sendMessage": "Send us a message",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Subject of your message",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "send": "Send",
+      "sending": "Sending..."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "Sorry, the page you are looking for does not exist.",
+    "backHome": "Back to home",
+    "goBack": "Go back"
+  },
+  "footer": {
+    "description": "A modern Vue.js application with best practices.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "allRightsReserved": "All rights reserved."
   }
 }
