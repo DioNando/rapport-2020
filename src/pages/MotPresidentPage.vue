@@ -1,7 +1,7 @@
 <template>
   <div class="mot-president-page">
     <HeroSection 
-      image-url="src/assets/images/backgrounds/othmane-benjelloun.png"
+      image-url="/assets/images/backgrounds/othmane-benjelloun.png"
       image-alt="Mot du Président - BOA"
     />
     

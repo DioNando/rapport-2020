@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <HeroSection 
-            video-url="src/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future-V2.mp4"
+            video-url="/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future-V2.mp4"
             image-alt="BOA Rapport Annuel 2020"
         />
 
@@ -106,21 +106,21 @@ const features = ref([
 const currentSlide = ref(0)
 const slideshowImages = ref([
     {
-        url: '/src/assets/images/backgrounds/DSC_4990.png',
+        url: '/assets/images/backgrounds/DSC_4990.png',
         alt: 'Image BOA 1',
         title: 'Création de Valeur & Impact Positif',
         titleEn: 'Value Creation & Positive Impact',
         link: '/creation-valeur'
     },
     {
-        url: '/src/assets/images/backgrounds/ID60b5e638cffab.png',
+        url: '/assets/images/backgrounds/ID60b5e638cffab.png',
         alt: 'Image BOA 2',
         title: 'Ambitions & Orientations Stratégiques',
         titleEn: 'Goals & Strategic Priorities',
         link: '/ambitions-orientations'
     },
     {
-        url: '/src/assets/images/backgrounds/ID60b5e706060d3-1.png',
+        url: '/assets/images/backgrounds/ID60b5e706060d3-1.png',
         alt: 'Image BOA 3',
         title: 'Perspectives',
         titleEn: 'Perspectives',

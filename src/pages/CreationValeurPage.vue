@@ -1,7 +1,7 @@
 <template>
   <div class="creation-valeur-page">
     <HeroSection 
-      image-url="src/assets/images/backgrounds/DSC_4990.png"
+      image-url="/assets/images/backgrounds/DSC_4990.png"
       image-alt="Création de Valeur - BOA"
     />
     

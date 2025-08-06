@@ -1,6 +1,6 @@
 <template>
     <div class="ra2020-pdf-page">
-        <HeroSection image-url="src/assets/images/backgrounds/RAPDF.png" image-alt="Rapport Annuel 2020 - BOA" />
+        <HeroSection image-url="/assets/images/backgrounds/RAPDF.png" image-alt="Rapport Annuel 2020 - BOA" />
 
         <div class="content-section">
             <div class="report-sections">
@@ -11,7 +11,7 @@
                         <div class="slide-divider"></div>
                     </div>
 
-                    <img src="/src/assets/images/icons/Image_3.png" alt="PDF Icon" />
+                    <img src="/assets/images/icons/Image_3.png" alt="PDF Icon" />
                 </div>
             </div>
         </div>
@@ -29,38 +29,38 @@ const reportSections = ref([
     {
         title: 'RAPPORT ANNUEL INTÉGRÉ 2020',
         titleEn: 'INTEGRATED ANNUAL REPORT 2020',
-        pdfUrlFr: '/src/assets/pdfs/RAPPORT-BMCE-INTEGRAL-XG-defBR-29-9-BON-1-2.pdf',
-        pdfUrlEn: '/src/assets/pdfs/RAPPORT-RAI-ANGLAIS.pdf'
+        pdfUrlFr: '/assets/pdfs/RAPPORT-BMCE-INTEGRAL-XG-defBR-29-9-BON-1-2.pdf',
+        pdfUrlEn: '/assets/pdfs/RAPPORT-RAI-ANGLAIS.pdf'
     },
     {
         title: 'RAPPORT DE GOUVERNANCE',
         titleEn: 'GOVERNANCE REPORT',
-        pdfUrlFr: '/src/assets/pdfs/Rapport-de-gouvernance.pdf',
-        pdfUrlEn: '/src/assets/pdfs/Le-rapport-Governance-BOA-ENglish.pdf'
+        pdfUrlFr: '/assets/pdfs/Rapport-de-gouvernance.pdf',
+        pdfUrlEn: '/assets/pdfs/Le-rapport-Governance-BOA-ENglish.pdf'
     },
     {
         title: 'DISPOSITIF DE GESTION DES RISQUES',
         titleEn: 'ORGANIZATION OF RISK MANAGEMENT',
-        pdfUrlFr: '/src/assets/pdfs/Dispositif-de-gestion-des-risques.pdf',
-        pdfUrlEn: '/src/assets/pdfs/Le-rapport-Risk-Management-BOA-ENglish.pdf'
+        pdfUrlFr: '/assets/pdfs/Dispositif-de-gestion-des-risques.pdf',
+        pdfUrlEn: '/assets/pdfs/Le-rapport-Risk-Management-BOA-ENglish.pdf'
     },
     {
         title: 'RAPPORT RSE',
         titleEn: 'SUSTAINABILITY REPORT',
-        pdfUrlFr: '/src/assets/pdfs/RAPPORT-BMCE-DD-2021-XG-def.pdf',
-        pdfUrlEn: '/src/assets/pdfs/RAPPORT-BMCE-DD-2021-XG-ANGLAIS-23-11.pdf'
+        pdfUrlFr: '/assets/pdfs/RAPPORT-BMCE-DD-2021-XG-def.pdf',
+        pdfUrlEn: '/assets/pdfs/RAPPORT-BMCE-DD-2021-XG-ANGLAIS-23-11.pdf'
     },
     {
         title: 'RAPPORT FINANCIER ANNUEL 2020',
         titleEn: 'ANNUAL FINANCIAL REPORT 2020',
-        pdfUrlFr: '/src/assets/pdfs/RFA-Bank-Of-Africa_2020.pdf',
-        pdfUrlEn: '/src/assets/pdfs/Annual-financial-report-2020-2.pdf'
+        pdfUrlFr: '/assets/pdfs/RFA-Bank-Of-Africa_2020.pdf',
+        pdfUrlEn: '/assets/pdfs/Annual-financial-report-2020-2.pdf'
     },
     {
         title: 'RAPPORT ABRÉGÉ 2020 EN SIX LANGUES',
         titleEn: 'ABRIDGED REPORT 2020 IN SIX LANGUAGES',
-        pdfUrlFr: '/src/assets/pdfs/ABREGE-COMPLET-2021-FR.pdf',
-        pdfUrlEn: '/src/assets/pdfs/ABREGE-COMPLET-2021-FR.pdf'
+        pdfUrlFr: '/assets/pdfs/ABREGE-COMPLET-2021-FR.pdf',
+        pdfUrlEn: '/assets/pdfs/ABREGE-COMPLET-2021-FR.pdf'
     }
 ])
 

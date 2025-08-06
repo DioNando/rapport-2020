@@ -162,9 +162,9 @@ $breakpoints: (
     background-color: $secondary-color;
     color: white;
 
-    &:hover {
-      background-color: darken($secondary-color, 10%);
-    }
+    // &:hover {
+    //   background-color: darken($secondary-color, 10%);
+    // }
   }
 
   @include responsive(md) {

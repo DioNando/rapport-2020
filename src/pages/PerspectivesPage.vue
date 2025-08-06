@@ -1,7 +1,7 @@
 <template>
   <div class="perspectives-page">
     <HeroSection 
-      image-url="src/assets/images/backgrounds/ID60b5e706060d3-1.png"
+      image-url="/assets/images/backgrounds/ID60b5e706060d3-1.png"
       image-alt="Perspectives - BOA"
     />
     

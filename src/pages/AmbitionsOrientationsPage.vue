@@ -1,7 +1,7 @@
 <template>
   <div class="ambitions-orientations-page">
     <HeroSection 
-      image-url="src/assets/images/backgrounds/ID60b5e638cffab.png"
+      image-url="/assets/images/backgrounds/ID60b5e638cffab.png"
       image-alt="Ambitions et Orientations - BOA"
     />
     
