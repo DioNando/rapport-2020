@@ -6,10 +6,14 @@ export function useLanguage() {
 
   const currentLanguage = computed(() => locale.value)
   
-  const availableLanguages = computed(() => [
+  const allLanguages = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
-  ])
+  ]
+  
+  const availableLanguages = computed(() => 
+    allLanguages.filter(lang => lang.code !== currentLanguage.value)
+  )
 
   const changeLanguage = (langCode) => {
     if (availableLocales.includes(langCode)) {

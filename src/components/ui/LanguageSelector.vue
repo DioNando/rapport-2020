@@ -9,20 +9,12 @@
       :title="lang.name"
     >
       {{ lang.flag }}
-      <span v-if="showText" class="lang-text">{{ lang.name }}</span>
     </button>
   </div>
 </template>
 
 <script setup>
 import { useLanguage } from '@/composables/useLanguage'
-
-defineProps({
-  showText: {
-    type: Boolean,
-    default: false
-  }
-})
 
 const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
 </script>
@@ -34,17 +26,19 @@ const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
 }
 
 .lang-btn {
-  padding: 0.5rem;
+  padding: 0.75rem;
   border: 2px solid #1369b4;
   background: transparent;
   color: #1369b4;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .lang-btn:hover {
@@ -55,16 +49,5 @@ const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
 .lang-btn.active {
   background: #1369b4;
   color: white;
-}
-
-.lang-text {
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-@media (max-width: 480px) {
-  .lang-text {
-    display: none;
-  }
 }
 </style>
