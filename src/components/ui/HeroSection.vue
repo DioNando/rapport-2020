@@ -1,14 +1,34 @@
 <template>
   <section class="hero">
     <div class="hero-background">
-      <img :src="imageUrl" :alt="imageAlt" class="hero-image" />
+      <!-- Image -->
+      <img 
+        v-if="!videoUrl" 
+        :src="imageUrl" 
+        :alt="imageAlt" 
+        class="hero-image" 
+      />
+      
+      <!-- Video -->
+      <video 
+        v-if="videoUrl"
+        :src="videoUrl"
+        class="hero-video"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source :src="videoUrl" type="video/mp4">
+        Votre navigateur ne supporte pas les vidéos HTML5.
+      </video>
+      
       <div class="hero-overlay" v-if="overlay"></div>
     </div>
     <div class="hero-content" v-if="title || subtitle">
       <h1 v-if="title" class="hero-title">{{ title }}</h1>
       <p v-if="subtitle" class="hero-subtitle">{{ subtitle }}</p>
     </div>
-    <img src="/src/assets/images/backgrounds/RAPDF.png" alt="Rapport Annuel 2020 - BOA ">
   </section>
 </template>
 
@@ -16,7 +36,11 @@
 defineProps({
   imageUrl: {
     type: String,
-    required: true
+    default: ''
+  },
+  videoUrl: {
+    type: String,
+    default: ''
   },
   imageAlt: {
     type: String,
@@ -58,11 +82,16 @@ $white: white;
     height: 100%;
   }
 
-  &-image {
+  &-image,
+  &-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  &-video {
+    pointer-events: none; // Empêche les interactions utilisateur avec la vidéo
   }
 
   &-overlay {

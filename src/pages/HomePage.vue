@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <HeroSection 
-            image-url="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80"
+            video-url="src/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future-V2.mp4"
             image-alt="BOA Rapport Annuel 2020"
         />
 
