@@ -8,7 +8,7 @@
       class="lang-btn"
       :title="lang.name"
     >
-      {{ lang.flag }}
+      <img :src="lang.flag" :alt="lang.name" class="flag-img" />
     </button>
   </div>
 </template>
@@ -26,13 +26,10 @@ const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
 }
 
 .lang-btn {
-  padding: 0.75rem;
-  border: 2px solid #1369b4;
+  padding: 0.5rem;
   background: transparent;
-  color: #1369b4;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 18px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -41,13 +38,20 @@ const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
   min-height: 44px;
 }
 
+.flag-img {
+  width: 24px;
+  height: 18px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
 .lang-btn:hover {
-  background: #1369b4;
+  /* background: #1369b4; */
   color: white;
 }
 
 .lang-btn.active {
-  background: #1369b4;
+  /* background: #1369b4; */
   color: white;
 }
 </style>

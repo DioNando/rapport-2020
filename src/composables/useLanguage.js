@@ -7,8 +7,18 @@ export function useLanguage() {
   const currentLanguage = computed(() => locale.value)
   
   const allLanguages = [
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'en', name: 'English', flag: '🇬🇧' }
+    { 
+      code: 'fr', 
+      name: 'Français', 
+      flag: 'https://flagsapi.com/FR/flat/64.png',
+      country: 'FR'
+    },
+    { 
+      code: 'en', 
+      name: 'English', 
+      flag: 'https://flagsapi.com/GB/flat/64.png',
+      country: 'GB'
+    }
   ]
   
   const availableLanguages = computed(() => 
