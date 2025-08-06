@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 // Layouts
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
@@ -23,8 +24,14 @@ const routes = [
         name: 'Home',
         component: HomePage,
         meta: {
-          title: 'Accueil',
-          description: 'Rapport annuel 2020 - BOA'
+          title: {
+            fr: 'Accueil - Rapport Annuel 2020 BOA',
+            en: 'Home - Annual Report 2020 BOA'
+          },
+          description: {
+            fr: 'Rapport annuel 2020 - Bank of Africa',
+            en: 'Annual Report 2020 - Bank of Africa'
+          }
         }
       },
       {
@@ -32,8 +39,14 @@ const routes = [
         name: 'MotPresident',
         component: MotPresidentPage,
         meta: {
-          title: 'Mot du Président',
-          description: 'Message du Président de la BOA'
+          title: {
+            fr: 'Mot du Président - BOA 2020',
+            en: 'CEO Message - BOA 2020'
+          },
+          description: {
+            fr: 'Message du Président de la Bank of Africa',
+            en: 'Message from the CEO of Bank of Africa'
+          }
         }
       },
       {
@@ -41,8 +54,14 @@ const routes = [
         name: 'CreationValeur',
         component: CreationValeurPage,
         meta: {
-          title: 'Création de Valeur',
-          description: 'Nos stratégies de création de valeur'
+          title: {
+            fr: 'Création de Valeur - BOA 2020',
+            en: 'Value Creation - BOA 2020'
+          },
+          description: {
+            fr: 'Nos stratégies de création de valeur durable',
+            en: 'Our sustainable value creation strategies'
+          }
         }
       },
       {
@@ -50,8 +69,14 @@ const routes = [
         name: 'AmbitionsOrientations',
         component: AmbitionsOrientationsPage,
         meta: {
-          title: 'Ambitions & Orientations Stratégiques',
-          description: 'Nos ambitions et orientations pour l\'avenir'
+          title: {
+            fr: 'Ambitions & Orientations - BOA 2020',
+            en: 'Ambitions & Strategic Orientations - BOA 2020'
+          },
+          description: {
+            fr: 'Nos ambitions et orientations stratégiques pour l\'avenir',
+            en: 'Our ambitions and strategic orientations for the future'
+          }
         }
       },
       {
@@ -59,8 +84,14 @@ const routes = [
         name: 'Performances',
         redirect: { name: 'Home', hash: '#performances' },
         meta: {
-          title: 'Performances',
-          description: 'Nos performances financières et opérationnelles'
+          title: {
+            fr: 'Performances - BOA 2020',
+            en: 'Performance - BOA 2020'
+          },
+          description: {
+            fr: 'Nos performances financières et opérationnelles 2020',
+            en: 'Our financial and operational performance 2020'
+          }
         }
       },
       {
@@ -68,8 +99,14 @@ const routes = [
         name: 'Perspectives',
         component: PerspectivesPage,
         meta: {
-          title: 'Perspectives',
-          description: 'Nos perspectives d\'avenir'
+          title: {
+            fr: 'Perspectives - BOA 2020',
+            en: 'Perspectives - BOA 2020'
+          },
+          description: {
+            fr: 'Nos perspectives d\'avenir et vision stratégique',
+            en: 'Our future perspectives and strategic vision'
+          }
         }
       },
       {
@@ -77,8 +114,14 @@ const routes = [
         name: 'Ra2020Pdf',
         component: Ra2020PdfPage,
         meta: {
-          title: 'Rapport Annuel 2020 PDF',
-          description: 'Version PDF du rapport annuel 2020'
+          title: {
+            fr: 'Rapport Annuel 2020 PDF - BOA',
+            en: 'Annual Report 2020 PDF - BOA'
+          },
+          description: {
+            fr: 'Téléchargez le rapport annuel 2020 en format PDF',
+            en: 'Download the 2020 annual report in PDF format'
+          }
         }
       }
     ]
@@ -100,7 +143,10 @@ const routes = [
     name: 'NotFound',
     component: NotFoundPage,
     meta: {
-      title: 'Page non trouvée',
+      title: {
+        fr: 'Page non trouvée - BOA',
+        en: 'Page not found - BOA'
+      },
       layout: 'minimal'
     }
   }
@@ -120,22 +166,37 @@ const router = createRouter({
 
 // Navigation guards
 router.beforeEach((to, from, next) => {
+  // Fonction pour obtenir la locale actuelle
+  const getCurrentLocale = () => {
+    // Récupérer la locale depuis localStorage ou utiliser 'en' par défaut
+    return localStorage.getItem('preferred-language') || 'en'
+  }
+  
+  const locale = getCurrentLocale()
+  
   // Mettre à jour le titre de la page
   if (to.meta?.title) {
-    document.title = `${to.meta.title} - Vue App`
+    const title = typeof to.meta.title === 'object' 
+      ? to.meta.title[locale] || to.meta.title.fr 
+      : to.meta.title
+    document.title = title
   } else {
-    document.title = 'Vue App'
+    document.title = locale === 'en' ? 'BOA Annual Report 2020' : 'Rapport Annuel BOA 2020'
   }
   
   // Mettre à jour la meta description
   if (to.meta?.description) {
+    const description = typeof to.meta.description === 'object'
+      ? to.meta.description[locale] || to.meta.description.fr
+      : to.meta.description
+      
     let metaDescription = document.querySelector('meta[name="description"]')
     if (!metaDescription) {
       metaDescription = document.createElement('meta')
       metaDescription.name = 'description'
       document.getElementsByTagName('head')[0].appendChild(metaDescription)
     }
-    metaDescription.content = to.meta.description
+    metaDescription.content = description
   }
   
   next()
