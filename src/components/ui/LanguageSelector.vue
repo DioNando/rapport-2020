@@ -35,9 +35,9 @@ const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
 
 .lang-btn {
   padding: 0.5rem;
-  border: 2px solid #646cff;
+  border: 2px solid #1369b4;
   background: transparent;
-  color: #646cff;
+  color: #1369b4;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
@@ -48,12 +48,12 @@ const { currentLanguage, availableLanguages, changeLanguage } = useLanguage()
 }
 
 .lang-btn:hover {
-  background: #646cff;
+  background: #1369b4;
   color: white;
 }
 
 .lang-btn.active {
-  background: #646cff;
+  background: #1369b4;
   color: white;
 }
 

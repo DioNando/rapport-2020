@@ -24,7 +24,7 @@ onMounted(() => {
 
 /* Animations globales pour les transitions de route */
 .router-link-active {
-  color: #646cff !important;
+  color: #1369b4 !important;
 }
 
 /* Amélioration du scrollbar */
@@ -37,12 +37,12 @@ onMounted(() => {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #646cff;
+  background: #1369b4;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #535bf2;
+  background: #0f5694;
 }
 
 /* Animations pour AOS */

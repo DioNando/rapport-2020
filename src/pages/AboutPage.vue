@@ -71,7 +71,7 @@ const stats = ref([
 .about-header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #646cff, #764ba2);
+  background: linear-gradient(135deg, #1369b4, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -113,7 +113,7 @@ const stats = ref([
 .placeholder-image {
   width: 200px;
   height: 200px;
-  background: linear-gradient(135deg, #646cff, #764ba2);
+  background: linear-gradient(135deg, #1369b4, #764ba2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@ const stats = ref([
 }
 
 .tech-tag {
-  background: #646cff;
+  background: #1369b4;
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
@@ -168,7 +168,7 @@ const stats = ref([
 .stat-number {
   font-size: 3rem;
   font-weight: bold;
-  color: #646cff;
+  color: #1369b4;
   margin-bottom: 0.5rem;
 }
 

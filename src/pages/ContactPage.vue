@@ -137,7 +137,7 @@ const handleSubmit = async () => {
 .contact-header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #646cff, #764ba2);
+  background: linear-gradient(135deg, #1369b4, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -223,13 +223,13 @@ const handleSubmit = async () => {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #646cff;
+  border-color: #1369b4;
 }
 
 .submit-btn {
   width: 100%;
   padding: 1rem;
-  background: #646cff;
+  background: #1369b4;
   color: white;
   border: none;
   border-radius: 8px;
@@ -240,7 +240,7 @@ const handleSubmit = async () => {
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #535bf2;
+  background: #0f5694;
   transform: translateY(-2px);
 }
 

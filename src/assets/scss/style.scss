@@ -1,6 +1,6 @@
 // Variables SCSS
-$primary-color: #646cff;
-$primary-hover: #535bf2;
+$primary-color: #1369b4;
+$primary-hover: #0f5694;
 $secondary-color: #764ba2;
 
 // Couleurs de fond
@@ -217,33 +217,6 @@ $breakpoints: (
   
   @include responsive(md) {
     &--2, &--3, &--4 { grid-template-columns: 1fr; }
-  }
-}
-
-// Mode sombre
-@media (prefers-color-scheme: dark) {
-  $bg-primary: #242424;
-  $bg-secondary: #1a1a1a;
-  $bg-card: rgba(36, 36, 36, 0.8);
-  $text-primary: rgba(255, 255, 255, 0.87);
-  $text-secondary: #cccccc;
-  $border-color: rgba(255, 255, 255, 0.2);
-  
-  .card {
-    background: $bg-card;
-    border-color: $border-color;
-    
-    &__header h1, &__header h2, &__header h3 {
-      color: $text-primary;
-    }
-    
-    &__content {
-      color: $text-secondary;
-    }
-    
-    &__footer {
-      border-top-color: $border-color;
-    }
   }
 }
 

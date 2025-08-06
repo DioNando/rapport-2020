@@ -49,7 +49,7 @@ const goBack = () => {
 .error-code {
   font-size: 8rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #646cff, #764ba2);
+  background: linear-gradient(135deg, #1369b4, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -88,23 +88,23 @@ const goBack = () => {
 }
 
 .btn-primary {
-  background: #646cff;
+  background: #1369b4;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #535bf2;
+  background: #0f5694;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
-  border-color: #646cff;
-  color: #646cff;
+  border-color: #1369b4;
+  color: #1369b4;
   background: transparent;
 }
 
 .btn-secondary:hover {
-  background: #646cff;
+  background: #1369b4;
   color: white;
   transform: translateY(-2px);
 }
