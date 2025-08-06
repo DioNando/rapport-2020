@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer" data-aos="fade-up">
+    <footer class="footer">
         <div class="footer-content">
             <img src="@/assets/images/logos/Logo_BOA_Plan_de_travail_1_cop.png" alt="Logo BOA"
                 class="logo-image" />
@@ -21,15 +21,7 @@ const currentYear = computed(() => new Date().getFullYear())
 .footer {
     background: #1369b4;
     color: #fff;
-    padding: 4rem;
-    
-    &-content {
-        padding: 0 2rem;
-        
-        @media (max-width: 768px) {
-            padding: 0 1rem;
-        }
-    }
+    padding: 5rem 7.5rem;
     
     &-bottom {
         display: none;

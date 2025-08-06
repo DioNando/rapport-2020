@@ -1,5 +1,10 @@
 <template>
   <div class="ambitions-orientations-page">
+    <HeroSection 
+      image-url="src/assets/images/backgrounds/ID60b5e638cffab.png"
+      image-alt="Ambitions et Orientations - BOA"
+    />
+    
     <div class="container">
       <div class="page-header" data-aos="fade-up">
         <h1 class="page-title">Ambitions & Orientations Stratégiques</h1>
@@ -21,13 +26,13 @@
 </template>
 
 <script setup>
+import HeroSection from '@/components/ui/HeroSection.vue'
 // Logique de la page à venir
 </script>
 
 <style lang="scss" scoped>
 .ambitions-orientations-page {
   min-height: 100vh;
-  padding: 2rem 0;
 }
 
 .page-header {

@@ -18,17 +18,17 @@ onMounted(() => {
 
 <style>
 /* Styles globaux pour l'application */
-#app {
+/* #app {
   min-height: 100vh;
-}
+} */
 
 /* Animations globales pour les transitions de route */
-.router-link-active {
+/* .router-link-active {
   color: #1369b4 !important;
-}
+} */
 
 /* Amélioration du scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
 }
 
@@ -43,7 +43,7 @@ onMounted(() => {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #0f5694;
-}
+} */
 
 /* Animations pour AOS */
 [data-aos] {

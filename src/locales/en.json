@@ -6,9 +6,9 @@
     "home": "Home",
     "motPresident": "Chairman's Message",
     "creationValeur": "Value Creation",
-    "ambitionsOrientations": "Ambitions & Strategic Orientations",
+    "ambitionsOrientations": "Goals & Strategic Priorities",
     "performances": "Performances",
-    "perspectives": "Perspectives",
+    "perspectives": "Outlook",
     "ra2020pdf": "AR2020PDF"
   },
   "common": {
@@ -17,7 +17,8 @@
     "save": "Save",
     "cancel": "Cancel",
     "delete": "Delete",
-    "edit": "Edit"
+    "edit": "Edit",
+    "readMore": "Read more"
   },
   "home": {
     "subtitle": "A modern Vue.js application with best practices",

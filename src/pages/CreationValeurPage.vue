@@ -1,5 +1,10 @@
 <template>
   <div class="creation-valeur-page">
+    <HeroSection 
+      image-url="src/assets/images/backgrounds/DSC_4990.png"
+      image-alt="Création de Valeur - BOA"
+    />
+    
     <div class="container">
       <div class="page-header" data-aos="fade-up">
         <h1 class="page-title">Création de Valeur</h1>
@@ -21,13 +26,13 @@
 </template>
 
 <script setup>
+import HeroSection from '@/components/ui/HeroSection.vue'
 // Logique de la page à venir
 </script>
 
 <style lang="scss" scoped>
 .creation-valeur-page {
   min-height: 100vh;
-  padding: 2rem 0;
 }
 
 .page-header {

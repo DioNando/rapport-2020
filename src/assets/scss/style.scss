@@ -27,7 +27,7 @@ $spacing: (
   md: 1rem,
   lg: 1.5rem,
   xl: 2rem,
-  xxl: 3rem
+  xxl: 3rem,
 );
 
 // Typographie
@@ -38,7 +38,7 @@ $font-sizes: (
   lg: 1.125rem,
   xl: 1.25rem,
   2xl: 1.5rem,
-  3xl: 2rem
+  3xl: 2rem,
 );
 
 // Transitions
@@ -51,7 +51,7 @@ $breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
 );
 
 // Mixins
@@ -80,7 +80,7 @@ $breakpoints: (
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform $transition-normal;
-  
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: $box-shadow-hover;
@@ -105,10 +105,10 @@ $breakpoints: (
 
 // Classes de base
 .container {
-  max-width: 1200px;
+  //   max-width: 1200px;
   margin: 0 auto;
   padding: 0 spacing(md);
-  
+
   @include responsive(md) {
     padding: 0 spacing(sm);
   }
@@ -116,49 +116,57 @@ $breakpoints: (
 
 // Classes utilitaires générées avec des boucles
 @each $name, $value in $spacing {
-  .p-#{$name} { padding: $value; }
-  .m-#{$name} { margin: $value; }
-  .gap-#{$name} { gap: $value; }
+  .p-#{$name} {
+    padding: $value;
+  }
+  .m-#{$name} {
+    margin: $value;
+  }
+  .gap-#{$name} {
+    gap: $value;
+  }
 }
 
 @each $name, $value in $font-sizes {
-  .text-#{$name} { font-size: $value; }
+  .text-#{$name} {
+    font-size: $value;
+  }
 }
 
 // Styles pour les boutons
 .btn {
   @include button-base;
-  
+
   &--primary {
     background-color: $primary-color;
     color: white;
-    
+
     &:hover {
       background-color: $primary-hover;
       transform: translateY(-2px);
     }
   }
-  
+
   &--outline {
     border-color: $primary-color;
     color: $primary-color;
     background: transparent;
-    
+
     &:hover {
       background-color: $primary-color;
       color: white;
     }
   }
-  
+
   &--secondary {
     background-color: $secondary-color;
     color: white;
-    
+
     &:hover {
       background-color: darken($secondary-color, 10%);
     }
   }
-  
+
   @include responsive(md) {
     padding: spacing(xs) spacing(md);
     font-size: font-size(sm);
@@ -168,22 +176,24 @@ $breakpoints: (
 // Styles pour les cartes
 .card {
   @include card-style;
-  
+
   &__header {
     margin-bottom: spacing(lg);
-    
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
       margin: 0;
       color: $text-primary;
     }
   }
-  
+
   &__content {
     margin-bottom: spacing(md);
     color: $text-secondary;
     line-height: 1.6;
   }
-  
+
   &__footer {
     margin-top: spacing(lg);
     padding-top: spacing(md);
@@ -192,31 +202,60 @@ $breakpoints: (
 }
 
 // Layout helpers
-.d-flex { display: flex; }
-.flex-column { flex-direction: column; }
-.justify-center { justify-content: center; }
-.align-center { align-items: center; }
-.flex-wrap { flex-wrap: wrap; }
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
 
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 
 // Grille responsive
 .grid {
   display: grid;
   gap: spacing(md);
-  
-  &--2 { grid-template-columns: repeat(2, 1fr); }
-  &--3 { grid-template-columns: repeat(3, 1fr); }
-  &--4 { grid-template-columns: repeat(4, 1fr); }
-  
-  @include responsive(lg) {
-    &--3, &--4 { grid-template-columns: repeat(2, 1fr); }
+
+  &--2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+  &--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include responsive(lg) {
+    &--3,
+    &--4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @include responsive(md) {
-    &--2, &--3, &--4 { grid-template-columns: 1fr; }
+    &--2,
+    &--3,
+    &--4 {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -233,7 +272,8 @@ $breakpoints: (
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {

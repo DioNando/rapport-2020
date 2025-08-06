@@ -17,7 +17,8 @@
     "save": "Enregistrer",
     "cancel": "Annuler",
     "delete": "Supprimer",
-    "edit": "Modifier"
+    "edit": "Modifier",
+    "readMore": "Lire la suite"
   },
   "home": {
     "subtitle": "Une application Vue.js moderne avec les meilleures pratiques",

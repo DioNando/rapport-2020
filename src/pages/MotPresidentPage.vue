@@ -1,5 +1,10 @@
 <template>
   <div class="mot-president-page">
+    <HeroSection 
+      image-url="src/assets/images/backgrounds/othmane-benjelloun.png"
+      image-alt="Mot du Président - BOA"
+    />
+    
     <div class="container">
       <div class="page-header" data-aos="fade-up">
         <h1 class="page-title">Mot du Président</h1>
@@ -21,13 +26,13 @@
 </template>
 
 <script setup>
+import HeroSection from '@/components/ui/HeroSection.vue'
 // Logique de la page à venir
 </script>
 
 <style lang="scss" scoped>
 .mot-president-page {
   min-height: 100vh;
-  padding: 2rem 0;
 }
 
 .page-header {

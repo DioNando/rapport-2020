@@ -1,5 +1,10 @@
 <template>
   <div class="perspectives-page">
+    <HeroSection 
+      image-url="src/assets/images/backgrounds/ID60b5e706060d3-1.png"
+      image-alt="Perspectives - BOA"
+    />
+    
     <div class="container">
       <div class="page-header" data-aos="fade-up">
         <h1 class="page-title">Perspectives</h1>
@@ -21,13 +26,13 @@
 </template>
 
 <script setup>
+import HeroSection from '@/components/ui/HeroSection.vue'
 // Logique de la page à venir
 </script>
 
 <style lang="scss" scoped>
 .perspectives-page {
   min-height: 100vh;
-  padding: 2rem 0;
 }
 
 .page-header {

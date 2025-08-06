@@ -1,5 +1,5 @@
 <template>
-    <header class="header" data-aos="fade-down">
+    <header class="header" :class="{ 'scrolled': isScrolled }" data-aos="fade-down">
         <nav class="navbar">
             <div class="nav-brand">
                 <router-link to="/" class="brand-link">
@@ -28,10 +28,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import LanguageSelector from '@/components/ui/LanguageSelector.vue'
 
 const isMenuOpen = ref(false)
+const isScrolled = ref(false)
 
 const navItems = [
     // { path: '/', label: 'navigation.home' },
@@ -43,6 +44,10 @@ const navItems = [
     { path: '/ra2020pdf', label: 'navigation.ra2020pdf' }
 ]
 
+const handleScroll = () => {
+    isScrolled.value = window.scrollY > 50
+}
+
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
 }
@@ -50,21 +55,37 @@ const toggleMenu = () => {
 const closeMenu = () => {
     isMenuOpen.value = false
 }
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <style lang="scss" scoped>
 .header {
-    background: black;
-    position: sticky;
+    background: transparent;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    
+    &.scrolled {
+        background: black;
+        // background: rgba(0, 0, 0, 0.95);
+        // backdrop-filter: blur(10px);
+    }
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5rem;
+    padding: 1.5rem 7.5rem;
     margin: 0 auto;
 }
 
@@ -86,16 +107,16 @@ const closeMenu = () => {
 .nav-link {
     text-decoration: none;
     color: white;
-    // font-weight: 400;
+    font-weight: 600;
     transition: color 0.3s ease;
     // padding: 0.5rem 1rem;
     border-radius: 6px;
     text-transform: uppercase;
-    font-size: .9em;
+    font-size: 1em;
 
     &:hover,
     &.router-link-active {
-        color: white !important;
+        color: white;
     }
 }
 
