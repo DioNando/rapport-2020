@@ -1,5 +1,54 @@
 /* @import "tailwindcss"; */
 
+/* Déclaration des fonts Nexa */
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/assets/fonts/Nexa-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NexaBlack';
+  src: url('/assets/fonts/NexaBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Variables CSS personnalisées */
 :root {
   /* Couleurs principales */
@@ -31,7 +80,8 @@
   --spacing-xxl: 3rem;
   
   /* Typographie */
-  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Nexa', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Nexa', system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
@@ -111,21 +161,9 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: #f9f9f9; */
   color: var(--text-primary);
   cursor: pointer;
   transition: all var(--transition-normal);
-}
-
-button:hover {
-  /* border-color: var(--primary-color); */
-  /* background-color: var(--primary-color); */
-  /* color: white; */
-}
-
-button:focus,
-button:focus-visible {
-  /* outline: 4px auto -webkit-focus-ring-color; */
 }
 
 /* Classes utilitaires pour les couleurs */
@@ -217,6 +255,56 @@ button:focus-visible {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--box-shadow-hover);
+}
+
+/* Classes pour les fonts Nexa */
+.font-nexa-light {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 300;
+}
+
+.font-nexa-regular {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 400;
+}
+
+.font-nexa-bold {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 700;
+}
+
+.font-nexa-extrabold {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 800;
+}
+
+.font-nexa-heavy {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 900;
+}
+
+.font-nexa-black {
+  font-family: 'NexaBlack', sans-serif;
+  font-weight: 900;
+}
+
+/* Classes pour les titres avec Nexa */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+.title-hero {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title-section {
+  font-family: 'Nexa', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Responsive breakpoints */

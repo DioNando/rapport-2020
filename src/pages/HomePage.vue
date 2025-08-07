@@ -1,34 +1,28 @@
 <template>
     <div class="home-page">
-        <HeroSection 
-            video-url="/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future-V2.mp4"
-            image-alt="BOA Rapport Annuel 2020"
-        />
+        <HeroSection video-url="/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future-V2.mp4"
+            image-alt="BOA Rapport Annuel 2020" />
 
-        <section class="features" data-aos="fade-up" data-aos-delay="300">
-            <h2>{{ $t('home.features', 'Fonctionnalités') }}</h2>
-            <div class="features-grid">
-                <div v-for="(feature, index) in features" :key="index" class="feature-card" data-aos="fade-up"
-                    :data-aos-delay="400 + index * 100">
-                    <div class="feature-icon">{{ feature.icon }}</div>
-                    <h3>{{ $t(feature.title) }}</h3>
-                    <p>{{ $t(feature.description) }}</p>
+        <!-- MOT DU PRESIDENT -->
+        <section class="mot-president" data-aos="fade-up" data-aos-delay="200">
+            <div class="mot-president-content">
+                <div>
+                    <h2 class="mot-president-title">{{ $t('navigation.motPresident') }}</h2>
+                    <div class="mot-president-divider"></div>
+                    <p>{{ $t('home.motPresidentSubtitle') }}</p>
                 </div>
+                <img src="/assets/images/backgrounds/president.png" alt="">
             </div>
-        </section>
-
-        <section id="performances" class="performances" data-aos="fade-up" data-aos-delay="500">
-            <h2>{{ $t('navigation.performances', 'Performances') }}</h2>
-            <div class="performances-content">
-                <div class="card">
-                    <div class="card__header">
-                        <h3>Performances 2020</h3>
-                    </div>
-                    <div class="card__content">
-                        <p>Contenu des performances financières et opérationnelles à venir...</p>
-                    </div>
-                </div>
+            <div class="mot-president-btn">
+                <router-link to="/mot-president" class="readMore-btn">
+                    {{ $t('common.readMore', 'Lire la suite') }}
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </router-link>
             </div>
+            <img class="image-africa" src="/assets/images/backgrounds/africa.png" alt="">
         </section>
 
         <section class="image-section">
@@ -173,6 +167,83 @@ $white: white;
     min-height: 80vh;
 }
 
+.mot-president {
+    position: relative;
+    max-width: 1600px;
+    margin: 6rem auto;
+
+    .image-africa {
+        height: 20rem;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: -1;
+    }
+
+    .mot-president-divider {
+        height: 4px;
+        width: 150px;
+        background: $primary-color;
+        margin: 2rem 0;
+    }
+
+    .mot-president-content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 5rem;
+        // text-align: center;
+
+        h2 {
+            font-size: 3em;
+            color: $primary-color;
+        }
+
+        p {
+            font-size: 2em;
+            color: $text-medium;
+        }
+    }
+
+    .mot-president-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .readMore-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 1.5rem;
+        background: transparent;
+        color: $primary-color;
+        text-decoration: none;
+        border: 2px solid $primary-color;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        text-shadow: none;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            // background: $primary-color;
+            color: $primary-color;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+
+            svg {
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
 .btn {
     padding: 0.75rem 2rem;
     border-radius: 8px;
@@ -268,7 +339,6 @@ $white: white;
     position: relative;
     height: 809px;
     overflow: hidden;
-    margin-top: 4rem;
 }
 
 .slideshow-container {

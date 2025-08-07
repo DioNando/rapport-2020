@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="footer-content">
-            <img src="@/assets/images/logos/Logo_BOA_Plan_de_travail_1_cop.png" alt="Logo BOA"
+            <img src="/assets/images/logos/Logo_BOA_Plan_de_travail_1_cop.png" alt="Logo BOA"
                 class="logo-image" />
         </div>
 

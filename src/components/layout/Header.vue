@@ -3,7 +3,7 @@
         <nav class="navbar">
             <div class="nav-brand">
                 <router-link to="/" class="brand-link">
-                    <img src="@/assets/images/logos/Logo_BOA_Plan_de_travail_1_cop.png" alt="Logo BOA"
+                    <img src="/assets/images/logos/Logo_BOA_Plan_de_travail_1_cop.png" alt="Logo BOA"
                         class="logo-image" />
                 </router-link>
             </div>
@@ -107,7 +107,7 @@ onUnmounted(() => {
 .nav-link {
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    // font-weight: 400;
     transition: color 0.3s ease;
     // padding: 0.5rem 1rem;
     border-radius: 6px;
