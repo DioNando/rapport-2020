@@ -1,6 +1,6 @@
 <template>
     <div class="home-page">
-        <HeroSection video-url="/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future-V2.mp4"
+        <HeroSection video-url="/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future.mp4"
             image-alt="BOA Rapport Annuel 2020" />
 
         <!-- MOT DU PRESIDENT -->
