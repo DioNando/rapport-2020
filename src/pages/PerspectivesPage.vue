@@ -1,70 +1,49 @@
 <template>
   <div class="perspectives-page">
-    <HeroSection 
-      image-url="/assets/images/backgrounds/ID60b5e706060d3-1.png"
-      image-alt="Perspectives - BOA"
-    />
-    
-    <div class="container">
-      <div class="page-header" data-aos="fade-up">
-        <h1 class="page-title">Perspectives</h1>
-        <p class="page-subtitle">Nos perspectives d'avenir</p>
-      </div>
-      
-      <div class="content-section" data-aos="fade-up" data-aos-delay="200">
-        <div class="card">
-          <div class="card__header">
-            <h2>Perspectives d'Avenir</h2>
-          </div>
-          <div class="card__content">
-            <p>Contenu à venir...</p>
-          </div>
-        </div>
-      </div>
+    <HeroSection image-url="/assets/images/backgrounds/ID60b5e706060d3-1.png" image-alt="Perspectives - BOA" />
+
+    <div class="content">
+      <p class="content-text">{{ t('perspectivesPage.content') }}</p>
+      <div class="content-divider"></div>
+      <p class="content-text">{{ t('perspectivesPage.content-2') }}</p>
     </div>
+
   </div>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import HeroSection from '@/components/ui/HeroSection.vue'
-// Logique de la page à venir
+
+const { t } = useI18n()
 </script>
 
 <style lang="scss" scoped>
-.perspectives-page {
-  min-height: 100vh;
-}
+$primary-color: #1369b4;
+$dark-primary: #0f5694;
+$text-dark: #333;
+$text-medium: #666;
+$white: white;
 
-.page-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
+.content {
+  margin: auto;
+  max-width: 1800px;
+  color: $text-medium;
+  padding: 2rem;
+  margin-bottom: 7rem;
 
-.page-title {
-  font-size: 3rem;
-  color: #1369b4;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.page-subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.content-section {
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
-  .page-title {
+  .content-text {
+    margin: 2rem 0;
     font-size: 2rem;
+    line-height: 1.6;
   }
-  
-  .page-subtitle {
-    font-size: 1rem;
+
+  .content-divider {
+    height: 5px;
+    width: 200px;
+    background-color: $primary-color;
+    margin: 2rem 0;
   }
+
 }
 </style>
