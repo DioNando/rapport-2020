@@ -5,7 +5,7 @@
       image-alt="Création de Valeur - BOA"
     />
     
-    <div class="container">
+    <!-- <div class="container">
       <div class="page-header" data-aos="fade-up">
         <h1 class="page-title">Création de Valeur</h1>
         <p class="page-subtitle">Nos stratégies de création de valeur</p>
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

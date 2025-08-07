@@ -91,7 +91,11 @@
   },
   "perspectivesPage": {
     "content": "Le Groupe BANK OF AFRICA a élaboré un plan stratégique de développement sur la période 2019-2021 poursuivant la consolidation de ses activités aussi bien au Maroc qu'à l'international. Sa vision de développement s'articule autour de 6 axes stratégiques, auxquels s'ajoutent d'autres leviers stratégiques :",
-    "content-2": "Afin d’accompagner efficacement le déploiement de son plan stratégique de développement, BANK OF AFRICA a renforcé son assise financière, en procédant au renforcement de ses fonds propres de 3,6 milliards de MAD en 2019 et de 793 millions de MAD en 2020 par conversion optionnelle en actions des dividendes. Par ailleurs, et dans le cadre d'une opération de titrisation de certains de ses actifs immobiliers, BANK OF AFRICA a mis en place un OPCI (Organisme de Placement Collectif en Immobilier) ayant permis d'optimiser son bilan."
+    "content-2": "Afin d’accompagner efficacement le déploiement de son plan stratégique de développement, BANK OF AFRICA a renforcé son assise financière, en procédant au renforcement de ses fonds propres de 3,6 milliards de MAD en 2019 et de 793 millions de MAD en 2020 par conversion optionnelle en actions des dividendes. Par ailleurs, et dans le cadre d'une opération de titrisation de certains de ses actifs immobiliers, BANK OF AFRICA a mis en place un OPCI (Organisme de Placement Collectif en Immobilier) ayant permis d'optimiser son bilan.",
+    "developmentPriorities": "Axes de développement",
+    "strategicDrivers": "Leviers stratégiques",
+    "operationalEfficiency": "Amélioration de l’efficacité opérationnelle",
+    "riskManagement": "Renforcement des dispositifs de gestion des Risques et de Recouvrement"
   },
   "footer": {
     "description": "Une application Vue.js moderne avec les meilleures pratiques.",

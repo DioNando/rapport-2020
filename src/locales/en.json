@@ -91,7 +91,11 @@
   },
   "perspectivesPage": {
     "content": "BANK OF AFRICA Group has drawn up a Strategic Development Plan for the 2019-21 period aimed at bolstering its domestic and international operations. Its development vision is structured around 6 strategic priorities, in addition to other growth drivers :",
-    "content-2": "To be sufficiently capitalised to be able to implement its strategic development plan, the Bank bolstered its capital base with MAD 3.6 billion raised in 2019 and a further MAD 793 million in 2020, with shareholders given the option of converting their dividends into equity. Furthermore, as part of a real estate securitisation transaction, BANK OF AFRICA set up a Real Estate Investment Trust (REIT) to optimise its balance sheet."
+    "content-2": "To be sufficiently capitalised to be able to implement its strategic development plan, the Bank bolstered its capital base with MAD 3.6 billion raised in 2019 and a further MAD 793 million in 2020, with shareholders given the option of converting their dividends into equity. Furthermore, as part of a real estate securitisation transaction, BANK OF AFRICA set up a Real Estate Investment Trust (REIT) to optimise its balance sheet.",
+    "developmentPriorities": "Development priorities",
+    "strategicDrivers": "Strategic drivers",
+    "operationalEfficiency": "Improved operational efficiency",
+    "riskManagement": "More robust risk management and recovery systems"
   },
   "footer": {
     "description": "A modern Vue.js application with best practices.",
