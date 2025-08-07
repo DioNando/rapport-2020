@@ -41,7 +41,7 @@ const routes = [
         meta: {
           title: {
             fr: 'Mot du Président - BOA 2020',
-            en: 'CEO Message - BOA 2020'
+            en: 'Chairman\'s Message - BOA 2020'
           },
           description: {
             fr: 'Message du Président de la Bank of Africa',

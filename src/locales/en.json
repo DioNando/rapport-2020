@@ -86,10 +86,24 @@
     "backHome": "Back to home",
     "goBack": "Go back"
   },
+  "ambitionsOrientationsPage": {
+    "content": "Driven by a deep-seated desire to contribute to the continent's development, BANK OF AFRICA has drawn up a set of strategic priorities that take into account current trends within the banking industry as well as learning from the various experiences brought about by the pandemic in 2020. Additional growth drivers include improving operational efficiency and bolstering risk management and recovery systems."
+  },
   "footer": {
     "description": "A modern Vue.js application with best practices.",
     "quickLinks": "Quick links",
     "contact": "Contact",
     "allRightsReserved": "All rights reserved."
+  },
+  "motPresident": {
+    "paragraph1": "BANK OF AFRICA's wholehearted commitment to its stakeholders in Morocco and Africa is best illustrated by the exemplary manner in which it has responded to the historic COVID-19 pandemic. To deal with this unprecedented environment and its repercussions, strong and rapid responses have been provided by the Moroccan State under the high instructions of His Majesty King Mohammed VI. As one of Morocco's major banking groups, BANK OF AFRICA's response to the national emergency has been equally strong, notably through its contribution of one billion dirhams to the special fund for pandemic management.",
+    "paragraph2": "Targeted support has thus been offered to the national economic fabric, particularly to VSMEs, through a global financing envelope of more than 14 billion dirhams and the provision of specific measures and adapted products to our customers.",
+    "paragraph3": "While implementing exceptional measures to protect our employees and customers, we have also established a business continuity plan to reduce the impact of the crisis on our various businesses.",
+    "paragraph4": "Thus, BANK OF AFRICA has demonstrated its resilience and confirmed the solidity of its economic model and the accuracy of its strategic choices.",
+    "paragraph5": "We continued to grow our business in 2020 with outstanding consolidated loans up 4% at MAD 194 billion and maintained savings with total consolidated deposits of MAD 207 billion, up 2% at end-December 2020. This commercial momentum was also reflected in the operational performance of the BANK OF AFRICA Group, with consolidated net banking income of MAD 14 billion, up 1%.",
+    "paragraph6": "As a pioneer in digital banking, an essential component of banking and social inclusion, BANK OF AFRICA reaffirmed its position in 2020 as a banking group resolutely focused on the future, with the development of new scalable remote banking services. Our customers, individuals, professionals and businesses, both in Morocco and in several of our African countries of operation, have been able to benefit from various channels to carry out their operations and now have a range of simple and fluid innovative solutions, in a context where remote services have become essential."
+  },
+  "ambitionsOrientations": {
+    "content": "Driven by a deep-seated desire to contribute to the continent's development, BANK OF AFRICA has drawn up a set of strategic priorities that take into account current trends within the banking industry as well as learning from the various experiences brought about by the pandemic in 2020. Additional growth drivers include improving operational efficiency and bolstering risk management and recovery systems."
   }
 }

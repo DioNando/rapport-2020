@@ -86,10 +86,24 @@
     "backHome": "Retour à l'accueil",
     "goBack": "Page précédente"
   },
+  "ambitionsOrientationsPage": {
+    "content": "Animé par une ambition forte d'accompagner le développement du continent, BANK OF AFRICA a fixé des priorités stratégiques qui tiennent compte de l'évolution actuelle de son métier et qui capitalisent sur les enseignements de la crise sanitaire qui a marqué l'année 2020. Tout en définissant les leviers stratégiques pour son développement, telle que l'amélioration de l'efficacité opérationnelle et le renforcement des dispositifs de gestion des Risques et de Recouvrement."
+  },
   "footer": {
     "description": "Une application Vue.js moderne avec les meilleures pratiques.",
     "quickLinks": "Liens rapides",
     "contact": "Contact",
     "allRightsReserved": "Tous droits réservés."
+  },
+  "motPresident": {
+    "paragraph1": "Engagé pleinement auprès de ses parties prenantes au Maroc et en Afrique, dans ce contexte historique lié à la pandémie du Coronavirus, BANK OF AFRICA a fait preuve d'une mobilisation exemplaire. Pour faire face à cet environnement inédit et à ses répercussions, des réponses fortes et rapides ont été apportées par l'Etat marocain sous les hautes instructions de Sa Majesté le Roi Mohammed VI. Acteur majeur du secteur bancaire marocain, notre Groupe a répondu fortement à l'urgence nationale à travers notamment sa contribution au fonds spécial pour la gestion de la pandémie à hauteur d'un milliard de Dirhams.",
+    "paragraph2": "Un accompagnement ciblé a ainsi été proposé au tissu économique national, notamment auprès des TPME, à travers une enveloppe globale de financement de plus de 14 milliards de Dirhams et la mise à la disposition de notre clientèle de mesures spécifiques et de produits adaptés.",
+    "paragraph3": "Tout en mettant en place des mesures exceptionnelles pour protéger nos collaborateurs et nos clients, nous avons également instauré un plan de continuité d'activité de manière à réduire l'impact de la crise sur nos différents métiers.",
+    "paragraph4": "Ainsi, BANK OF AFRICA a démontré sa résilience et a confirmé la solidité de son modèle économique et la justesse de ses choix stratégiques.",
+    "paragraph5": "Notre dynamique de développement s'est matérialisée, en 2020, par un encours de crédits consolidés en hausse de +4% à 194 milliards de dirhams et une épargne maintenue avec un total des dépôts consolidés de 207 milliards de dirhams, en progression de +2% à fin décembre 2020. Cette dynamique commerciale s'est également reflétée au niveau de la performance opérationnelle du Groupe BANK OF AFRICA, avec un Produit Net Bancaire consolidé de 14 milliards de dirhams, en hausse de +1%.",
+    "paragraph6": "Précurseur de la banque digitale, composante essentielle de l'inclusion bancaire et sociale, BANK OF AFRICA a réaffirmé en 2020 son positionnement de groupe bancaire résolument tourné vers l'avenir, avec le développement de nouveaux services évolutifs de banque à distance. Nos clients, particuliers, professionnels et entreprises, tant au Maroc que dans plusieurs de nos pays d'implantation en Afrique, ont pu bénéficier de divers canaux pour réaliser leurs opérations et disposent désormais d'une panoplie de solutions novatrices simples et fluides, dans un contexte où les services à distance sont devenus incontournables."
+  },
+  "ambitionsOrientations": {
+    "content": "Animé par une ambition forte d'accompagner le développement du continent, BANK OF AFRICA a fixé des priorités stratégiques qui tiennent compte de l'évolution actuelle de son métier et qui capitalisent sur les enseignements de la crise sanitaire qui a marqué l'année 2020. Tout en définissant les leviers stratégiques pour son développement, telle que l'amélioration de l'efficacité opérationnelle et le renforcement des dispositifs de gestion des Risques et de Recouvrement."
   }
 }
