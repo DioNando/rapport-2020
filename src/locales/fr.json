@@ -36,7 +36,11 @@
       "title": "Design",
       "description": "Interface moderne avec animations fluides"
     },
-    "motPresidentSubtitle": "Engagé pleinement auprès de ses parties prenantes au Maroc et en Afrique, dans ce contexte historique lié à la pandémie du Coronavirus, BANK OF AFRICA a fait preuve d’une mobilisation exemplaire…"
+    "motPresidentSubtitle": "Engagé pleinement auprès de ses parties prenantes au Maroc et en Afrique, dans ce contexte historique lié à la pandémie du Coronavirus, BANK OF AFRICA a fait preuve d'une mobilisation exemplaire…",
+    "performances": {
+      "title": "Performances & Réalisations",
+      "description": "La crise sanitaire ayant marqué l'année 2020 s'est accompagnée d'un fort ralentissement économique au niveau mondial, avec une résilience relative de certaines régions, telles que l'Afrique. Cette conjoncture particulière a impacté directement le secteur bancaire et a révélé la solidité financière des différents acteurs du système, qui ont su relever ce défi avec l'accompagnement prudent de l'autorité bancaire Bank Al-Maghrib. Par ailleurs, le développement soutenu du digital durant les dernières années a permis de transformer en profondeur les métiers de la Banque. Les différentes innovations mises en œuvre ont été un véritable atout dans la gestion de l'activité, dans un contexte de restriction de mobilité imposé par la crise sanitaire. À l'issu de cette année particulière, BANK OF AFRICA a démontré la solidité de ses fondamentaux et la pertinence de ses choix stratégiques en termes de diversification géographique et confirmé la justesse des choix technologiques réalisés auparavant."
+    }
   },
   "about": {
     "intro": "Découvrez notre projet et notre vision",

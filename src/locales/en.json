@@ -36,7 +36,11 @@
       "title": "Design",
       "description": "Modern interface with smooth animations"
     },
-    "motPresidentSubtitle": "BANK OF AFRICA's wholehearted commitment to its stakeholders is best illustrated by the exemplary manner in which it has responded to the COVID-19 pandemic…"
+    "motPresidentSubtitle": "BANK OF AFRICA's wholehearted commitment to its stakeholders is best illustrated by the exemplary manner in which it has responded to the COVID-19 pandemic…",
+    "performances": {
+      "title": "Performance & Achievements",
+      "description": "With events in 2020 dominated by the COVID-19 pandemic, economies around the world saw a sharp slowdown. A number of regions, including Africa, proved relatively resilient. The challenging operating environment also underlined the solidity of Morocco's financial system and that of its institutions which, supported by the country's banking authority, Bank Al-Maghrib, were successfully met. Furthermore, the Bank's business lines have undergone a transformation due to the development of digital banking. The various innovations made have proved a real asset in managing the business in a context of reduced mobility due to the pandemic. In what was an unprecedented year, BANK OF AFRICA's solid fundamentals and appropriate strategic choices in terms of geographic diversification were underlined, so too, its astuteness in the technological choices made previously."
+    }
   },
   "about": {
     "intro": "Discover our project and our vision",

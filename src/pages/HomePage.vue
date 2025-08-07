@@ -25,6 +25,62 @@
             <img class="image-africa" src="/assets/images/backgrounds/africa.png" alt="">
         </section>
 
+        <!-- PARTENAIRES -->
+        <section class="partenaires" data-aos="fade-up" data-aos-delay="300">
+            <div class="partenaires-container">
+                <div class="marquee-container">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <img src="/assets/images/logos/Logo1.jpg" alt="Logo 1" class="partner-logo">
+                            <img src="/assets/images/logos/Logo2.jpg" alt="Logo 2" class="partner-logo">
+                            <img src="/assets/images/logos/Logo3.jpg" alt="Logo 3" class="partner-logo">
+                            <img src="/assets/images/logos/Logo4.jpg" alt="Logo 4" class="partner-logo">
+                            <img src="/assets/images/logos/Logo5.jpg" alt="Logo 5" class="partner-logo">
+                            <img src="/assets/images/logos/Logo6.jpg" alt="Logo 6" class="partner-logo">
+                            <img src="/assets/images/logos/Logo7.jpg" alt="Logo 7" class="partner-logo">
+                            <img src="/assets/images/logos/Logo8.jpg" alt="Logo 8" class="partner-logo">
+                            <img src="/assets/images/logos/Logo9.jpg" alt="Logo 9" class="partner-logo">
+                            <img src="/assets/images/logos/Logo10.jpg" alt="Logo 10" class="partner-logo">
+                            <img src="/assets/images/logos/Logo11.jpg" alt="Logo 11" class="partner-logo">
+                            <img src="/assets/images/logos/Logo12.jpg" alt="Logo 12" class="partner-logo">
+                        </div>
+                        <!-- Duplicate pour effet continu -->
+                        <div class="marquee-content">
+                            <img src="/assets/images/logos/Logo1.jpg" alt="Logo 1" class="partner-logo">
+                            <img src="/assets/images/logos/Logo2.jpg" alt="Logo 2" class="partner-logo">
+                            <img src="/assets/images/logos/Logo3.jpg" alt="Logo 3" class="partner-logo">
+                            <img src="/assets/images/logos/Logo4.jpg" alt="Logo 4" class="partner-logo">
+                            <img src="/assets/images/logos/Logo5.jpg" alt="Logo 5" class="partner-logo">
+                            <img src="/assets/images/logos/Logo6.jpg" alt="Logo 6" class="partner-logo">
+                            <img src="/assets/images/logos/Logo7.jpg" alt="Logo 7" class="partner-logo">
+                            <img src="/assets/images/logos/Logo8.jpg" alt="Logo 8" class="partner-logo">
+                            <img src="/assets/images/logos/Logo9.jpg" alt="Logo 9" class="partner-logo">
+                            <img src="/assets/images/logos/Logo10.jpg" alt="Logo 10" class="partner-logo">
+                            <img src="/assets/images/logos/Logo11.jpg" alt="Logo 11" class="partner-logo">
+                            <img src="/assets/images/logos/Logo12.jpg" alt="Logo 12" class="partner-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERFORMANCES & REALISATIONS -->
+        <section class="performances" data-aos="fade-up" data-aos-delay="400">
+            <div class="performances-container">
+                <div class="performances-video">
+                    <video autoplay muted loop>
+                        <source src="/assets/videos/Video-BOA-2020-highlights-FINAL-1.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+                <div class="performances-content">
+                    <h2 class="performances-title">{{ $t('home.performances.title', 'Performances & Réalisations') }}</h2>
+                    <div class="performances-divider"></div>
+                    <p class="performances-text">{{ $t('home.performances.description', 'Découvrez nos performances exceptionnelles et réalisations marquantes de l\'année 2020. Bank of Africa continue de démontrer sa solidité financière et son engagement envers le développement économique du continent africain.') }}</p>
+                </div>
+            </div>
+        </section>
+
         <section class="image-section">
             <div class="slideshow-container">
                 <div v-for="(image, index) in slideshowImages" :key="index" class="slide"
@@ -319,19 +375,188 @@ $white: white;
     margin-bottom: 1rem;
 }
 
-.performances {
-    margin-top: 4rem;
-    text-align: center;
+.partenaires {
+    margin: 6rem 0;
+    padding: 0 2rem;
 
-    h2 {
-        font-size: 2.5rem;
-        color: $primary-color;
-        margin-bottom: 2rem;
+    &-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+    
+    &::before {
+        left: 0;
+        // background: linear-gradient(to right, rgba(19, 105, 180, 0.05), transparent);
+    }
+    
+    &::after {
+        right: 0;
+        // background: linear-gradient(to left, rgba(19, 105, 180, 0.05), transparent);
+    }
+}
+
+.marquee {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 3rem;
+    
+    @media (max-width: 768px) {
+        gap: 2rem;
+    }
+}
+
+.partner-logo {
+    height: 10rem;
+    // width: auto;
+    object-fit: contain;
+    // filter: grayscale(100%) opacity(0.7);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    
+    &:hover {
+        // filter: grayscale(0%) opacity(1);
+        transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+        height: 60px;
+    }
+    
+    @media (max-width: 480px) {
+        height: 50px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.performances {
+    margin: 6rem 0;
+    padding: 0 2rem;
+
+    &-container {
+        max-width: 1700px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        min-height: 500px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 2rem;
+            min-height: auto;
+        }
+    }
+
+    &-video {
+        flex: 1;
+        position: relative;
+        // border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+        video {
+            width: 100%;
+            // height: 400px;
+            object-fit: cover;
+            object-position: center;
+
+            @media (max-width: 768px) {
+                height: 250px;
+            }
+        }
     }
 
     &-content {
-        max-width: 800px;
-        margin: 0 auto;
+        flex: 1;
+        padding: 2rem 0;
+
+        @media (max-width: 768px) {
+            text-align: center;
+            padding: 1rem 0;
+        }
+    }
+
+    &-title {
+        font-family: 'Nexa', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 2rem 0;
+        line-height: 1.2;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &-divider {
+        width: 150px;
+        height: 5px;
+        background: $primary-color;
+        margin: 0 0 2rem 0;
+        border-radius: 2px;
+
+        @media (max-width: 768px) {
+            margin: 0 auto 2rem auto;
+        }
+    }
+
+    &-text {
+        font-family: 'Nexa', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $text-medium;
+        line-height: 1.8;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
     }
 }
 
