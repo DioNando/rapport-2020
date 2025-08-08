@@ -65,13 +65,20 @@
         </section>
 
         <!-- PERFORMANCES & REALISATIONS -->
-        <section class="performances" data-aos="fade-up" data-aos-delay="400">
+        <section id="performances" class="performances" data-aos="fade-up" data-aos-delay="400">
             <div class="performances-container">
-                <div class="performances-video">
-                    <video autoplay muted loop>
+                <div class="performances-video" @click="openVideoModal">
+                    <video ref="performanceVideo" muted preload="metadata" poster="/assets/images/backgrounds/Video-BOA-uk.gif">
                         <source src="/assets/videos/Video-BOA-2020-highlights-FINAL-1.mp4" type="video/mp4">
                         Votre navigateur ne supporte pas la lecture de vidéos.
                     </video>
+                    <div class="video-overlay">
+                        <div class="play-button">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
                 <div class="performances-content">
                     <h2 class="performances-title">{{ $t('home.performances.title', 'Performances & Réalisations') }}</h2>
@@ -124,6 +131,21 @@
                 </button>
             </div>
         </section>
+
+        <!-- Modal Vidéo -->
+        <div v-if="showVideoModal" class="video-modal" @click="closeVideoModal">
+            <div class="video-modal-content" @click.stop>
+                <button class="close-btn" @click="closeVideoModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <video ref="modalVideo" controls autoplay class="modal-video">
+                    <source src="/assets/videos/Video-BOA-2020-highlights-FINAL-1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -133,6 +155,11 @@ import { useI18n } from 'vue-i18n'
 import HeroSection from '@/components/ui/HeroSection.vue'
 
 const { t, locale } = useI18n()
+
+// Modal vidéo
+const showVideoModal = ref(false)
+const modalVideo = ref(null)
+const performanceVideo = ref(null)
 
 const features = ref([
     {
@@ -201,6 +228,24 @@ const stopAutoSlide = () => {
         clearInterval(slideInterval)
         slideInterval = null
     }
+}
+
+// Méthodes pour le modal vidéo
+const openVideoModal = () => {
+    showVideoModal.value = true
+    // Arrêter le diaporama quand le modal s'ouvre
+    stopAutoSlide()
+}
+
+const closeVideoModal = () => {
+    showVideoModal.value = false
+    // Pauser la vidéo du modal
+    if (modalVideo.value) {
+        modalVideo.value.pause()
+        modalVideo.value.currentTime = 0
+    }
+    // Redémarrer le diaporama
+    startAutoSlide()
 }
 
 onMounted(() => {
@@ -490,6 +535,20 @@ $white: white;
         // border-radius: 1rem;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+            
+            .video-overlay {
+                background: rgba(0, 0, 0, 0.4);
+            }
+            
+            .play-button {
+                transform: scale(1.1);
+            }
+        }
 
         video {
             width: 100%;
@@ -557,6 +616,102 @@ $white: white;
             font-size: 1rem;
             line-height: 1.6;
         }
+    }
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    svg {
+        margin-left: 4px; // Pour centrer visuellement le triangle
+    }
+
+    @media (max-width: 768px) {
+        width: 60px;
+        height: 60px;
+        
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 2rem;
+
+    .video-modal-content {
+        position: relative;
+        max-width: 90vw;
+        max-height: 90vh;
+        width: 100%;
+        
+        @media (min-width: 768px) {
+            width: 80vw;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1001;
+        padding: 0.5rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            top: -40px;
+            right: -10px;
+        }
+    }
+
+    .modal-video {
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
+        border-radius: 8px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     }
 }
 

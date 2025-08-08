@@ -158,6 +158,12 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
+    } else if (to.hash) {
+      // Si il y a un hash dans l'URL, défiler vers l'élément correspondant
+      return {
+        el: to.hash,
+        behavior: 'smooth'
+      }
     } else {
       return { top: 0, behavior: 'smooth' }
     }
