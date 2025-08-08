@@ -37,37 +37,37 @@ const { t } = useI18n()
 const developmentImages = [
   {
     urlFr: "/assets/images/perspectives/PERSPECTIVES-02.png",
-    urlEn: "/assets/images/perspectives/inclusion-en.png",
+    urlEn: "/assets/images/perspectives/OUTLOOK-02.png",
     altFr: "Excellence Opérationnelle",
     altEn: "Operational Excellence"
   },
   {
     urlFr: "/assets/images/perspectives/PERSPECTIVES-03.png",
-    urlEn: "/assets/images/perspectives/inclusion-en.png",
+    urlEn: "/assets/images/perspectives/OUTLOOK-03.png",
     altFr: "Innovation Technologique",
     altEn: "Technological Innovation"
   },
   {
     urlFr: "/assets/images/perspectives/PERSPECTIVES-04.png",
-    urlEn: "/assets/images/perspectives/inclusion-en.png",
+    urlEn: "/assets/images/perspectives/OUTLOOK-04.png",
     altFr: "Expansion Géographique",
     altEn: "Geographic Expansion"
   },
   {
     urlFr: "/assets/images/perspectives/PERSPECTIVES-05.png",
-    urlEn: "/assets/images/perspectives/inclusion-en.png",
+    urlEn: "/assets/images/perspectives/OUTLOOK-05.png",
     altFr: "Partenariats Stratégiques",
     altEn: "Strategic Partnerships"
   },
   {
     urlFr: "/assets/images/perspectives/PERSPECTIVES-06.png",
-    urlEn: "/assets/images/perspectives/inclusion-en.png",
+    urlEn: "/assets/images/perspectives/OUTLOOK-06.png",
     altFr: "Durabilité",
     altEn: "Sustainability"
   },
   {
     urlFr: "/assets/images/perspectives/PERSPECTIVES-07.png",
-    urlEn: "/assets/images/perspectives/inclusion-en.png",
+    urlEn: "/assets/images/perspectives/OUTLOOK-07.png",
     altFr: "Inclusion Financière",
     altEn: "Financial Inclusion"
   }
