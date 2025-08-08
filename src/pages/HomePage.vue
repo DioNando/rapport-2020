@@ -29,16 +29,164 @@
         <section class="new-slideshow-section">
             <img class="image-africa" src="/assets/images/backgrounds/africa.png" alt="">
             <div class="new-slideshow-container">
-                <div v-for="(image, index) in newSlideshowImages" :key="index" class="new-slide"
-                    :class="{ active: currentNewSlide === index }">
-                    <!-- <img :src="image.url" :alt="image.alt" class="new-slide-image" /> -->
-                    <div class="new-slide-overlay"></div>
+                <!-- Slide 1 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 0 }">
                     <div class="new-slide-content">
-                        <h2 class="new-slide-title">{{ locale === 'en' ? image.titleEn : image.title }}</h2>
-                        <div class="new-slide-divider"></div>
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'Shareholder structure' :
+                                'Actionnariat' }}</h2>
+                            <div class="new-slide-divider"></div>
+                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
+                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                        </div>
+                        <div class="new-slide-image">
+                            <img src="/assets/images/slides/animation-graphe-V2-UK-1.gif" alt="">
+                        </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link :to="image.link" class="new-slide-btn">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 1 }">
+                    <div class="new-slide-content">
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'And Extensive Geographical Coverage' :
+                                'Et une large présence géographique' }}</h2>
+                            <div class="new-slide-divider"></div>
+                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
+                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                        </div>
+                        <div class="new-slide-image">
+                            <img src="/assets/images/slides/Et-une-large-presence-geographique-UK.gif">
+                        </div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 2 }">
+                    <div class="new-slide-content">
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A PAN-AFRICAN VOCATION' :
+                                'Une vocation panafricaine' }}</h2>
+                            <div class="new-slide-divider"></div>
+                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
+                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                        </div>
+                        <div class="new-slide-image">
+                            <img src="/assets/images/slides/Carte-Afrique-uk-1.gif">
+                        </div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 3 }">
+                    <div class="new-slide-content">
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'BANK OF AFRICA Contributing to the african continent\'s economic and social development for more than 60 years' :
+                                'BANQUE OF AFRICA Plus de 60 ans au service du développement économique et social du continent' }}</h2>
+                            <div class="new-slide-divider"></div>
+                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
+                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                        </div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 4 }">
+                    <div class="new-slide-content">
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A MEMBER OF O CAPITAL GROUP' :
+                                'Appartenance à O CAPITAL GROUP' }}</h2>
+                            <div class="new-slide-divider"></div>
+                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
+                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                        </div>
+                        <div class="new-slide-image">
+                            <img src="/assets/images/slides/O-CAPITAL-GROUP.gif">
+                        </div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 5 }">
+                    <div class="new-slide-content">
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A socially responsible and committed banking group' :
+                                'Fondation BMCE BANK au service de l\'éducation et l\'environnement en Afrique' }}</h2>
+                            <div class="new-slide-divider"></div>
+                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
+                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                        </div>
+                        <div class="new-slide-image">
+                            <img src="/assets/images/slides/Fondation-BMCE-Bank.gif">
+                        </div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="new-slide" :class="{ active: currentNewSlide === 6 }">
+                    <div class="new-slide-content">
+                        <div class="new-slide-text">
+                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A ROBUST AND COMMITTED GOVERNANCE SYSTEM' :
+                                'Une gouvernance solide et engagée' }}</h2>
+                            <div class="new-slide-divider"></div>
+                        </div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link to="/creation-valeur" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -49,11 +197,15 @@
                     </div>
                 </div>
 
+                <!-- ! RESTE DES DIAPORAMAS -->
+
+
                 <!-- Navigation dots -->
-                <div class="new-dots-container">
-                    <span v-for="(image, index) in newSlideshowImages" :key="index" class="new-dot"
-                        :class="{ active: currentNewSlide === index }" @click="goToNewSlide(index)"></span>
-                </div>
+                <!-- <div class="new-dots-container">
+                    <span class="new-dot" :class="{ active: currentNewSlide === 0 }" @click="goToNewSlide(0)"></span>
+                    <span class="new-dot" :class="{ active: currentNewSlide === 1 }" @click="goToNewSlide(1)"></span>
+                    <span class="new-dot" :class="{ active: currentNewSlide === 2 }" @click="goToNewSlide(2)"></span>
+                </div> -->
 
                 <!-- Navigation arrows -->
                 <button class="new-nav-arrow prev" @click="prevNewSlide">
@@ -232,29 +384,6 @@ const features = ref([
 
 // Nouveau Diaporama
 const currentNewSlide = ref(0)
-const newSlideshowImages = ref([
-    {
-        url: '/assets/images/backgrounds/DSC_4990.png',
-        alt: 'Nouvelle Image BOA 1',
-        title: 'Innovation & Excellence',
-        titleEn: 'Innovation & Excellence',
-        link: '/creation-valeur'
-    },
-    {
-        url: '/assets/images/backgrounds/ID60b5e638cffab.png',
-        alt: 'Nouvelle Image BOA 2',
-        title: 'Leadership & Croissance',
-        titleEn: 'Leadership & Growth',
-        link: '/ambitions-orientations'
-    },
-    {
-        url: '/assets/images/backgrounds/ID60b5e706060d3-1.png',
-        alt: 'Nouvelle Image BOA 3',
-        title: 'Vision & Développement',
-        titleEn: 'Vision & Development',
-        link: '/perspectives'
-    }
-])
 
 let newSlideInterval = null
 
@@ -311,11 +440,11 @@ const stopAutoSlide = () => {
 
 // Méthodes pour le nouveau diaporama
 const nextNewSlide = () => {
-    currentNewSlide.value = (currentNewSlide.value + 1) % newSlideshowImages.value.length
+    currentNewSlide.value = (currentNewSlide.value + 1) % 7
 }
 
 const prevNewSlide = () => {
-    currentNewSlide.value = currentNewSlide.value === 0 ? newSlideshowImages.value.length - 1 : currentNewSlide.value - 1
+    currentNewSlide.value = currentNewSlide.value === 0 ? 6 : currentNewSlide.value - 1
 }
 
 const goToNewSlide = (index) => {
@@ -323,7 +452,7 @@ const goToNewSlide = (index) => {
 }
 
 const startAutoNewSlide = () => {
-    newSlideInterval = setInterval(nextNewSlide, 12000) // Change toutes les 12 secondes
+    newSlideInterval = setInterval(nextNewSlide, 15000) // Change toutes les 15 secondes
 }
 
 const stopAutoNewSlide = () => {
@@ -1071,7 +1200,7 @@ $white: white;
         position: absolute;
         top: 2rem;
         right: 2rem;
-        height:20rem;
+        height: 20rem;
         object-fit: cover;
         object-position: center;
     }
@@ -1103,29 +1232,42 @@ $white: white;
         object-position: center;
     }
 
-    &-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-    }
-
     &-content {
-        position: absolute;
-        top: 15%;
-        left: 8%;
-        color: $white;
-        z-index: 3;
-        max-width: 800px;
-        padding: 0 2rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10rem;
+
+        .new-slide-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex: 1;
+        }
+
+        .new-slide-image {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                // height: 100%;
+                // object-fit: cover;
+                // object-position: center;
+            }
+        }
     }
 
     &-action {
         position: absolute;
         bottom: 10%;
-        left: 8%;
+        left: 50%;
+        transform: translateX(-50%);
         color: $white;
         z-index: 3;
         padding: 0 2rem;
@@ -1146,6 +1288,12 @@ $white: white;
         background: $white;
         margin-top: 2rem;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    &-description {
+        font-size: 1.75rem;
+        margin-top: 2rem;
+        color: $text-medium;
     }
 
     &-btn {
