@@ -36,14 +36,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import HeroSection from '@/components/ui/HeroSection.vue'
 
 const { t, locale } = useI18n()
 
+// Fonction réactive pour ouvrir les PDFs selon la langue
 const openPDF = (urlFr, urlEn) => {
-  window.open(locale === 'fr' ? urlFr : urlEn, '_blank')
+  // Utilise la valeur actuelle de locale au moment de l'appel
+  const selectedUrl = locale.value === 'fr' ? urlFr : urlEn
+  window.open(selectedUrl, '_blank')
 }
 
 // Images du business model avec URLs français et anglais
