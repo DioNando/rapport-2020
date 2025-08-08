@@ -27,10 +27,11 @@
 
         <!-- NOUVELLE SECTION DIAPORAMA -->
         <section class="new-slideshow-section">
+            <img class="image-africa" src="/assets/images/backgrounds/africa.png" alt="">
             <div class="new-slideshow-container">
                 <div v-for="(image, index) in newSlideshowImages" :key="index" class="new-slide"
                     :class="{ active: currentNewSlide === index }">
-                    <img :src="image.url" :alt="image.alt" class="new-slide-image" />
+                    <!-- <img :src="image.url" :alt="image.alt" class="new-slide-image" /> -->
                     <div class="new-slide-overlay"></div>
                     <div class="new-slide-content">
                         <h2 class="new-slide-title">{{ locale === 'en' ? image.titleEn : image.title }}</h2>
@@ -1060,9 +1061,20 @@ $white: white;
 .new-slideshow-section {
     position: relative;
     height: 809px;
+    background-image: url("/assets/images/backgrounds/ID2e811172d8e1d8e1fe6b20007391.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     margin: 6rem 0;
-    display: none;
+
+    .image-africa {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        height:20rem;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .new-slideshow-container {
@@ -1097,7 +1109,6 @@ $white: white;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.4);
         z-index: 2;
     }
 
@@ -1121,9 +1132,9 @@ $white: white;
     }
 
     &-title {
-        font-size: 3.5rem;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $primary-color;
         margin-bottom: 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         line-height: 1.2;
@@ -1132,7 +1143,7 @@ $white: white;
     &-divider {
         width: 150px;
         height: 5px;
-        background: $primary-color;
+        background: $white;
         margin-top: 2rem;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
@@ -1188,6 +1199,7 @@ $white: white;
     background: rgba($primary-color, 0.5);
     cursor: pointer;
     transition: background 0.3s ease;
+    display: none;
 
     &.active,
     &:hover {
@@ -1201,7 +1213,7 @@ $white: white;
     transform: translateY(-50%);
     background: transparent;
     color: $primary-color;
-    border: 2px solid $primary-color;
+    // border: 2px solid $primary-color;
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
@@ -1219,8 +1231,8 @@ $white: white;
     }
 
     &:hover {
-        background: $primary-color;
-        color: $white;
+        // background: $primary-color;
+        // color: $white;
         transform: translateY(-50%) scale(1.1);
 
         svg {
