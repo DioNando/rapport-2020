@@ -45,7 +45,7 @@
                             <img src="/assets/images/logos/Logo12.jpg" alt="Logo 12" class="partner-logo">
                         </div>
                         <!-- Duplicate pour effet continu -->
-                        <div class="marquee-content">
+                        <div class="marquee-content" style="margin-left: 3rem;">
                             <img src="/assets/images/logos/Logo1.jpg" alt="Logo 1" class="partner-logo">
                             <img src="/assets/images/logos/Logo2.jpg" alt="Logo 2" class="partner-logo">
                             <img src="/assets/images/logos/Logo3.jpg" alt="Logo 3" class="partner-logo">
@@ -435,6 +435,7 @@ $white: white;
     white-space: nowrap;
     position: relative;
     width: 100%;
+    height: 12rem; // Hauteur fixe pour éviter le chevauchement
     
     &::before,
     &::after {
@@ -449,18 +450,19 @@ $white: white;
     
     &::before {
         left: 0;
-        // background: linear-gradient(to right, rgba(19, 105, 180, 0.05), transparent);
+        background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
     }
     
     &::after {
         right: 0;
-        // background: linear-gradient(to left, rgba(19, 105, 180, 0.05), transparent);
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent);
     }
 }
 
 .marquee {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
+    height: 100%;
     
     &:hover {
         animation-play-state: paused;
@@ -470,9 +472,11 @@ $white: white;
 .marquee-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     min-width: 100%;
-    gap: 3rem;
+    gap: 4rem;
+    height: 100%;
+    flex-shrink: 0; // Empêche la compression
     
     @media (max-width: 768px) {
         gap: 2rem;
@@ -480,24 +484,22 @@ $white: white;
 }
 
 .partner-logo {
-    height: 10rem;
-    // width: auto;
+    height: 8rem;
+    width: auto;
     object-fit: contain;
-    // filter: grayscale(100%) opacity(0.7);
     transition: all 0.3s ease;
     flex-shrink: 0;
     
     &:hover {
-        // filter: grayscale(0%) opacity(1);
         transform: scale(1.1);
     }
     
     @media (max-width: 768px) {
-        height: 60px;
+        height: 6rem;
     }
     
     @media (max-width: 480px) {
-        height: 50px;
+        height: 5rem;
     }
 }
 

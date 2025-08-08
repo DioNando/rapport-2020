@@ -73,7 +73,7 @@ onUnmounted(() => {
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    
+
     &.scrolled {
         background: black;
         // background: rgba(0, 0, 0, 0.95);
@@ -107,12 +107,13 @@ onUnmounted(() => {
 .nav-link {
     text-decoration: none;
     color: white;
-    // font-weight: 400;
+    font-weight: 600;
     transition: color 0.3s ease;
     // padding: 0.5rem 1rem;
     border-radius: 6px;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: .95em;
+    text-align: center;
 
     &:hover,
     &.router-link-active {
@@ -158,6 +159,33 @@ onUnmounted(() => {
         }
     }
 }
+
+// @media (max-width: 1200px) {
+//     .navbar {
+//         padding: 1rem;
+//     }
+
+//     .nav-menu {
+//         position: fixed;
+//         top: 100%;
+//         left: 0;
+//         width: 100%;
+//         background: rgba(255, 255, 255, 0.98);
+//         backdrop-filter: blur(10px);
+//         flex-direction: column;
+//         padding: 2rem;
+//         transform: translateY(-100vh);
+//         transition: transform 0.3s ease;
+//     }
+
+//     .menu-toggle {
+//         display: flex;
+//     }
+
+//     .logo-image {
+//         width: 50%;
+//     }
+// }
 
 @media (max-width: 768px) {
     .navbar {
