@@ -25,6 +25,51 @@
             <img class="image-africa" src="/assets/images/backgrounds/africa.png" alt="">
         </section>
 
+        <!-- NOUVELLE SECTION DIAPORAMA -->
+        <section class="new-slideshow-section">
+            <div class="new-slideshow-container">
+                <div v-for="(image, index) in newSlideshowImages" :key="index" class="new-slide"
+                    :class="{ active: currentNewSlide === index }">
+                    <img :src="image.url" :alt="image.alt" class="new-slide-image" />
+                    <div class="new-slide-overlay"></div>
+                    <div class="new-slide-content">
+                        <h2 class="new-slide-title">{{ locale === 'en' ? image.titleEn : image.title }}</h2>
+                        <div class="new-slide-divider"></div>
+                    </div>
+                    <div class="new-slide-action">
+                        <router-link :to="image.link" class="new-slide-btn">
+                            {{ $t('common.readMore', 'Lire la suite') }}
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </router-link>
+                    </div>
+                </div>
+
+                <!-- Navigation dots -->
+                <div class="new-dots-container">
+                    <span v-for="(image, index) in newSlideshowImages" :key="index" class="new-dot"
+                        :class="{ active: currentNewSlide === index }" @click="goToNewSlide(index)"></span>
+                </div>
+
+                <!-- Navigation arrows -->
+                <button class="new-nav-arrow prev" @click="prevNewSlide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="new-nav-arrow next" @click="nextNewSlide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
         <!-- PARTENAIRES -->
         <section class="partenaires" data-aos="fade-up" data-aos-delay="300">
             <div class="partenaires-container">
@@ -88,6 +133,7 @@
             </div>
         </section>
 
+        <!-- REFERENCE -->
         <section class="image-section">
             <div class="slideshow-container">
                 <div v-for="(image, index) in slideshowImages" :key="index" class="slide"
@@ -179,7 +225,35 @@ const features = ref([
     }
 ])
 
-// Diaporama
+// Nouveau Diaporama
+const currentNewSlide = ref(0)
+const newSlideshowImages = ref([
+    {
+        url: '/assets/images/backgrounds/DSC_4990.png',
+        alt: 'Nouvelle Image BOA 1',
+        title: 'Innovation & Excellence',
+        titleEn: 'Innovation & Excellence',
+        link: '/creation-valeur'
+    },
+    {
+        url: '/assets/images/backgrounds/ID60b5e638cffab.png',
+        alt: 'Nouvelle Image BOA 2',
+        title: 'Leadership & Croissance',
+        titleEn: 'Leadership & Growth',
+        link: '/ambitions-orientations'
+    },
+    {
+        url: '/assets/images/backgrounds/ID60b5e706060d3-1.png',
+        alt: 'Nouvelle Image BOA 3',
+        title: 'Vision & Développement',
+        titleEn: 'Vision & Development',
+        link: '/perspectives'
+    }
+])
+
+let newSlideInterval = null
+
+// Diaporama original
 const currentSlide = ref(0)
 const slideshowImages = ref([
     {
@@ -230,11 +304,36 @@ const stopAutoSlide = () => {
     }
 }
 
+// Méthodes pour le nouveau diaporama
+const nextNewSlide = () => {
+    currentNewSlide.value = (currentNewSlide.value + 1) % newSlideshowImages.value.length
+}
+
+const prevNewSlide = () => {
+    currentNewSlide.value = currentNewSlide.value === 0 ? newSlideshowImages.value.length - 1 : currentNewSlide.value - 1
+}
+
+const goToNewSlide = (index) => {
+    currentNewSlide.value = index
+}
+
+const startAutoNewSlide = () => {
+    newSlideInterval = setInterval(nextNewSlide, 12000) // Change toutes les 12 secondes
+}
+
+const stopAutoNewSlide = () => {
+    if (newSlideInterval) {
+        clearInterval(newSlideInterval)
+        newSlideInterval = null
+    }
+}
+
 // Méthodes pour le modal vidéo
 const openVideoModal = () => {
     showVideoModal.value = true
-    // Arrêter le diaporama quand le modal s'ouvre
+    // Arrêter les diaporamas quand le modal s'ouvre
     stopAutoSlide()
+    stopAutoNewSlide()
 }
 
 const closeVideoModal = () => {
@@ -244,16 +343,19 @@ const closeVideoModal = () => {
         modalVideo.value.pause()
         modalVideo.value.currentTime = 0
     }
-    // Redémarrer le diaporama
+    // Redémarrer les diaporamas
     startAutoSlide()
+    startAutoNewSlide()
 }
 
 onMounted(() => {
     startAutoSlide()
+    startAutoNewSlide()
 })
 
 onUnmounted(() => {
     stopAutoSlide()
+    stopAutoNewSlide()
 })
 </script>
 
@@ -946,6 +1048,238 @@ $white: white;
 
     .features-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+// Nouvelle section diaporama
+.new-slideshow-section {
+    position: relative;
+    height: 809px;
+    overflow: hidden;
+    margin: 6rem 0;
+    display: none;
+}
+
+.new-slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.new-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.active {
+        opacity: 1;
+    }
+
+    &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+
+    &-content {
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        color: $white;
+        z-index: 3;
+        max-width: 800px;
+        padding: 0 2rem;
+    }
+
+    &-action {
+        position: absolute;
+        bottom: 10%;
+        left: 8%;
+        color: $white;
+        z-index: 3;
+        padding: 0 2rem;
+    }
+
+    &-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        line-height: 1.2;
+    }
+
+    &-divider {
+        width: 150px;
+        height: 5px;
+        background: $primary-color;
+        margin-top: 2rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    &-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 1.5rem;
+        background: transparent;
+        color: $primary-color;
+        text-decoration: none;
+        border: 2px solid $primary-color;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        text-shadow: none;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            background: $primary-color;
+            color: $white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba($primary-color, 0.3);
+
+            svg {
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+.new-dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.new-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba($primary-color, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &.active,
+    &:hover {
+        background: $primary-color;
+    }
+}
+
+.new-nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 5rem;
+        height: 5rem;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        background: $primary-color;
+        color: $white;
+        transform: translateY(-50%) scale(1.1);
+
+        svg {
+            transform: scale(1.1);
+        }
+    }
+
+    &.prev {
+        left: 20px;
+    }
+
+    &.next {
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-slideshow-section {
+        height: 40vh;
+        margin: 4rem 0;
+    }
+
+    .new-slide {
+
+        &-content,
+        &-action {
+            padding: 0 1rem;
+        }
+
+        &-title {
+            font-size: 2rem;
+        }
+
+        &-btn {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    .new-nav-arrow {
+        width: 40px;
+        height: 40px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        &.prev {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+    }
+
+    .new-dots-container {
+        bottom: 10px;
+    }
+
+    .new-dot {
+        width: 10px;
+        height: 10px;
     }
 }
 

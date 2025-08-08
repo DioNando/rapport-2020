@@ -113,5 +113,26 @@
   },
   "ambitionsOrientations": {
     "content": "Animé par une ambition forte d'accompagner le développement du continent, BANK OF AFRICA a fixé des priorités stratégiques qui tiennent compte de l'évolution actuelle de son métier et qui capitalisent sur les enseignements de la crise sanitaire qui a marqué l'année 2020. Tout en définissant les leviers stratégiques pour son développement, telle que l'amélioration de l'efficacité opérationnelle et le renforcement des dispositifs de gestion des Risques et de Recouvrement."
+  },
+  "creationValeur": {
+    "businessModelTitle": "Des atouts solides pour une création de valeur économique et sociale à l’échelle du continent",
+    "csrStrategyTitle": "Des enjeux prioritaires au coeur de la stratégie RSE",
+    "csrParagraph1": "Depuis plus de 25 ans, l’engagement et la contribution au développement économique et social animent les initiatives de BANK OF AFRICA, d’abord à travers la Fondation BMCE Bank, ensuite dans le cadre d’une stratégie RSE volontariste et ambitieuse.",
+    "csrParagraph2": "BANK OF AFRICA a été à l’avant-garde des institutions bancaires au Maroc et en Afrique en faisant de ses engagements un levier de développement et un vecteur de création de valeur. Avec une démarche concertée, mobilisant des entités internes, des experts de la performance extra-financière et des tiers indépendants, BANK OF AFRICA est à l’écoute de l’ensemble de ses parties prenantes et étudie régulièrement leurs attentes.",
+    "foundationTitle": "LA FONDATION BMCE BANK EN 2020",
+    "businessModelImages": {
+      "image1": {
+        "alt": "Création de valeur économique"
+      },
+      "image2": {
+        "alt": "Développement de l'impact social"
+      },
+      "image3": {
+        "alt": "Stratégie de croissance durable"
+      },
+      "image4": {
+        "alt": "Création de valeur continentale"
+      }
+    }
   }
 }

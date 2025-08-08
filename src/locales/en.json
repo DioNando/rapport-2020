@@ -113,5 +113,26 @@
   },
   "ambitionsOrientations": {
     "content": "Driven by a deep-seated desire to contribute to the continent's development, BANK OF AFRICA has drawn up a set of strategic priorities that take into account current trends within the banking industry as well as learning from the various experiences brought about by the pandemic in 2020. Additional growth drivers include improving operational efficiency and bolstering risk management and recovery systems."
+  },
+  "creationValeur": {
+    "businessModelTitle": "Business model enabling the group to generate economic and social value across the continent",
+    "csrStrategyTitle": "CSR strategy focusing on key priorities",
+    "csrParagraph1": "For more than 25 years, BANK OF AFRICA has been committed to and contributed to initiatives promoting economic and social development, initially via BMCE Bank Foundation and subsequently via a proactive and ambitious CSR strategy.",
+    "csrParagraph2": "BANK OF AFRICA has been at the forefront of banking institutions in Morocco and Africa in embracing CSR undertakings as growth drivers and catalysts for value generation. Adopting a concerted approach involving internal departments, non-financial performance experts and independent third parties, BANK OF AFRICA is entirely empathetic to the needs of each of its stakeholders and regularly assesses their expectations.",
+    "foundationTitle": "BMCE BANK FOUNDATION IN 2020",
+    "businessModelImages": {
+      "image1": {
+        "alt": "Economic Value Creation"
+      },
+      "image2": {
+        "alt": "Social Impact Development"
+      },
+      "image3": {
+        "alt": "Sustainable Growth Strategy"
+      },
+      "image4": {
+        "alt": "Continental Value Generation"
+      }
+    }
   }
 }
