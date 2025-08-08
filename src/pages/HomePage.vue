@@ -44,14 +44,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                        <a @click="openPDF('/assets/pdfs/Actionnariat.pdf', '/assets/pdfs/Shareholders.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 <!-- Slide 2 -->
@@ -69,14 +69,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                        <a @click="openPDF('/assets/pdfs/Presence-geographique.pdf', '/assets/pdfs/Geographical-coverage.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 <!-- Slide 3 -->
@@ -94,14 +94,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                        <a @click="openPDF('/assets/pdfs/Presence-Panafricaine.pdf', '/assets/pdfs/Pan-African-vocation.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 <!-- Slide 4 -->
@@ -116,14 +116,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                        <a @click="openPDF('/assets/pdfs/Historique.pdf', '/assets/pdfs/History.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 <!-- Slide 5 -->
@@ -141,14 +141,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                        <a @click="openPDF('/assets/pdfs/O-Capital-group.pdf', '/assets/pdfs/O-Capital-Group.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 <!-- Slide 6 -->
@@ -166,14 +166,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                         <a @click="openPDF('/assets/pdfs/Fondation-BMCE-Bank.pdf', '/assets/pdfs/BMCE-Banks-Foundation.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 <!-- Slide 7 -->
@@ -186,14 +186,14 @@
                         </div>
                     </div>
                     <div class="new-slide-action">
-                        <router-link to="/creation-valeur" class="new-slide-btn">
+                        <a @click="openPDF('/assets/pdfs/Gouvernance.pdf', '/assets/pdfs/Governance.pdf')" class="new-slide-btn">
                             {{ $t('common.readMore', 'Lire la suite') }}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
 
@@ -358,6 +358,13 @@ import { useI18n } from 'vue-i18n'
 import HeroSection from '@/components/ui/HeroSection.vue'
 
 const { t, locale } = useI18n()
+
+// Fonction réactive pour ouvrir les PDFs selon la langue
+const openPDF = (urlFr, urlEn) => {
+  // Utilise la valeur actuelle de locale au moment de l'appel
+  const selectedUrl = locale.value === 'fr' ? urlFr : urlEn
+  window.open(selectedUrl, '_blank')
+}
 
 // Modal vidéo
 const showVideoModal = ref(false)
@@ -1310,6 +1317,7 @@ $white: white;
         font-size: 1.1rem;
         transition: all 0.3s ease;
         text-shadow: none;
+        cursor: pointer;
 
         svg {
             width: 20px;
