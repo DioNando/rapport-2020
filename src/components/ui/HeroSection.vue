@@ -106,10 +106,8 @@ $white: white;
 
   &-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    bottom: 10%;
+    left: 10%;
     color: $white;
     z-index: 3;
     max-width: 800px;
@@ -117,18 +115,15 @@ $white: white;
   }
 
   &-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    line-height: 1.2;
   }
 
   &-subtitle {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    line-height: 1.4;
   }
 }
 

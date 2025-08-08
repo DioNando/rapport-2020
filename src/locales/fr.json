@@ -21,6 +21,7 @@
     "readMore": "Lire la suite"
   },
   "home": {
+    "title": "BANK OF AFRICA UN GROUPE QUI SE TRANSFORME AU FIL DU TEMPS",
     "subtitle": "Une application Vue.js moderne avec les meilleures pratiques",
     "learnMore": "En savoir plus",
     "features": "Fonctionnalités",
@@ -91,10 +92,10 @@
   },
   "perspectivesPage": {
     "content": "Le Groupe BANK OF AFRICA a élaboré un plan stratégique de développement sur la période 2019-2021 poursuivant la consolidation de ses activités aussi bien au Maroc qu'à l'international. Sa vision de développement s'articule autour de 6 axes stratégiques, auxquels s'ajoutent d'autres leviers stratégiques :",
-    "content-2": "Afin d’accompagner efficacement le déploiement de son plan stratégique de développement, BANK OF AFRICA a renforcé son assise financière, en procédant au renforcement de ses fonds propres de 3,6 milliards de MAD en 2019 et de 793 millions de MAD en 2020 par conversion optionnelle en actions des dividendes. Par ailleurs, et dans le cadre d'une opération de titrisation de certains de ses actifs immobiliers, BANK OF AFRICA a mis en place un OPCI (Organisme de Placement Collectif en Immobilier) ayant permis d'optimiser son bilan.",
+    "content-2": "Afin d'accompagner efficacement le déploiement de son plan stratégique de développement, BANK OF AFRICA a renforcé son assise financière, en procédant au renforcement de ses fonds propres de 3,6 milliards de MAD en 2019 et de 793 millions de MAD en 2020 par conversion optionnelle en actions des dividendes. Par ailleurs, et dans le cadre d'une opération de titrisation de certains de ses actifs immobiliers, BANK OF AFRICA a mis en place un OPCI (Organisme de Placement Collectif en Immobilier) ayant permis d'optimiser son bilan.",
     "developmentPriorities": "Axes de développement",
     "strategicDrivers": "Leviers stratégiques",
-    "operationalEfficiency": "Amélioration de l’efficacité opérationnelle",
+    "operationalEfficiency": "Amélioration de l'efficacité opérationnelle",
     "riskManagement": "Renforcement des dispositifs de gestion des Risques et de Recouvrement"
   },
   "footer": {
@@ -104,6 +105,8 @@
     "allRightsReserved": "Tous droits réservés."
   },
   "motPresident": {
+    "title": "Othman Benjelloun",
+    "subtitle": "Président Directeur Général",
     "paragraph1": "Engagé pleinement auprès de ses parties prenantes au Maroc et en Afrique, dans ce contexte historique lié à la pandémie du Coronavirus, BANK OF AFRICA a fait preuve d'une mobilisation exemplaire. Pour faire face à cet environnement inédit et à ses répercussions, des réponses fortes et rapides ont été apportées par l'Etat marocain sous les hautes instructions de Sa Majesté le Roi Mohammed VI. Acteur majeur du secteur bancaire marocain, notre Groupe a répondu fortement à l'urgence nationale à travers notamment sa contribution au fonds spécial pour la gestion de la pandémie à hauteur d'un milliard de Dirhams.",
     "paragraph2": "Un accompagnement ciblé a ainsi été proposé au tissu économique national, notamment auprès des TPME, à travers une enveloppe globale de financement de plus de 14 milliards de Dirhams et la mise à la disposition de notre clientèle de mesures spécifiques et de produits adaptés.",
     "paragraph3": "Tout en mettant en place des mesures exceptionnelles pour protéger nos collaborateurs et nos clients, nous avons également instauré un plan de continuité d'activité de manière à réduire l'impact de la crise sur nos différents métiers.",
@@ -112,14 +115,21 @@
     "paragraph6": "Précurseur de la banque digitale, composante essentielle de l'inclusion bancaire et sociale, BANK OF AFRICA a réaffirmé en 2020 son positionnement de groupe bancaire résolument tourné vers l'avenir, avec le développement de nouveaux services évolutifs de banque à distance. Nos clients, particuliers, professionnels et entreprises, tant au Maroc que dans plusieurs de nos pays d'implantation en Afrique, ont pu bénéficier de divers canaux pour réaliser leurs opérations et disposent désormais d'une panoplie de solutions novatrices simples et fluides, dans un contexte où les services à distance sont devenus incontournables."
   },
   "ambitionsOrientations": {
+    "title": "AMBITIONS & ORIENTATIONS STRATÉGIQUES",
     "content": "Animé par une ambition forte d'accompagner le développement du continent, BANK OF AFRICA a fixé des priorités stratégiques qui tiennent compte de l'évolution actuelle de son métier et qui capitalisent sur les enseignements de la crise sanitaire qui a marqué l'année 2020. Tout en définissant les leviers stratégiques pour son développement, telle que l'amélioration de l'efficacité opérationnelle et le renforcement des dispositifs de gestion des Risques et de Recouvrement."
   },
   "creationValeur": {
-    "businessModelTitle": "Des atouts solides pour une création de valeur économique et sociale à l’échelle du continent",
+    "title": "CRÉATION DE VALEUR & IMPACT POSITIF",
+    "businessModelTitle": "Des atouts solides pour une création de valeur économique et sociale à l'échelle du continent",
     "csrStrategyTitle": "Des enjeux prioritaires au coeur de la stratégie RSE",
-    "csrParagraph1": "Depuis plus de 25 ans, l’engagement et la contribution au développement économique et social animent les initiatives de BANK OF AFRICA, d’abord à travers la Fondation BMCE Bank, ensuite dans le cadre d’une stratégie RSE volontariste et ambitieuse.",
-    "csrParagraph2": "BANK OF AFRICA a été à l’avant-garde des institutions bancaires au Maroc et en Afrique en faisant de ses engagements un levier de développement et un vecteur de création de valeur. Avec une démarche concertée, mobilisant des entités internes, des experts de la performance extra-financière et des tiers indépendants, BANK OF AFRICA est à l’écoute de l’ensemble de ses parties prenantes et étudie régulièrement leurs attentes.",
+    "csrParagraph1": "Depuis plus de 25 ans, l'engagement et la contribution au développement économique et social animent les initiatives de BANK OF AFRICA, d'abord à travers la Fondation BMCE Bank, ensuite dans le cadre d'une stratégie RSE volontariste et ambitieuse.",
+    "csrParagraph2": "BANK OF AFRICA a été à l'avant-garde des institutions bancaires au Maroc et en Afrique en faisant de ses engagements un levier de développement et un vecteur de création de valeur. Avec une démarche concertée, mobilisant des entités internes, des experts de la performance extra-financière et des tiers indépendants, BANK OF AFRICA est à l'écoute de l'ensemble de ses parties prenantes et étudie régulièrement leurs attentes.",
     "foundationTitle": "LA FONDATION BMCE BANK EN 2020",
+    "foundationDescription": {
+      "title": "La fondation BMCE Bank un engagement inégalé en faveur de l'éducation et de l'environnement",
+      "paragraph1": "Groupe engagé dans le développement économique et social du Royaume, et convaincu que l'éducation est un enjeu vital pour son développement économique, social et culturel, BANK OF AFRICA a, dès 1995, créé sa Fondation avec pour vocation première de soutenir l'action des pouvoirs publics dans la lutte contre l'analphabétisme, le décrochage scolaire, et la non-scolarisation des jeunes filles. Née de cette volonté, la Fondation BMCE Bank pour l'Education et l'Environnement, apporte des réponses concrètes et durables au défi de l'éducation dans les zones défavorisées du Royaume et des pays du continent dans lesquels le Groupe est présent. Elle agit pour améliorer l'accès à l'éducation et lutte contre la précarité liée aux inégalités scolaires, à l'ère du développement du digital dans l'enseignement.",
+      "paragraph2": "A travers son programme phare Medersat.com, centré sur l'enseignement préscolaire et primaire, chaque année, ce sont plus de 10 000 enfants au Maroc et dans certains pays d'Afrique subsaharienne que la Fondation parvient à scolariser."
+    },
     "businessModelImages": {
       "image1": {
         "alt": "Création de valeur économique"
@@ -133,6 +143,23 @@
       "image4": {
         "alt": "Création de valeur continentale"
       }
+    },
+    "frenchLegion": {
+      "title": "LÉGION D'HONNEUR DE LA RÉPUBLIQUE FRANÇAISE",
+      "content": "La Présidente de la Fondation BMCE Bank, Dr Leila Mezian Benjelloun a été décorée, mardi 3 mars 2020 à Rabat, de l'insigne d'Officier de la Légion d'Honneur de la République française. Cette décoration lui a été remise par l'Ambassadrice de la République Française au Maroc, Mme Hélène Le Gal, lors d'une cérémonie à laquelle ont pris part plusieurs personnalités marocaines et françaises du monde diplomatique, politique et des affaires."
+    },
+    "awards": {
+      "africanAward": {
+        "title": "TROPHÉE DE L'AFRICANITÉ",
+        "content": "Dr. Leila Mezian Benjelloun a été honorée par l'attribution du trophée de l'Africanité de l'année 2020. Hommage supplémentaire rendu à Dr Leila Mezian Benjelloun pour ses actions, son engagement et sa contribution à la reconnaissance de la dignité des Africains et Africaines dans le monde, le trophée de l'Africanité lui a été attribué lors de « La journée de l'ICESCO perspectives et potentialités » organisée le 23 novembre 2020 conjointement par l'ICESCO et la Fondation Trophée de l'Africanité."
+      },
+      "teachMorocco": {
+        "title": "PRÉSIDENCE D'HONNEUR DE TEACH FOR MOROCCO",
+        "content": "Dr Leila Mezian Benjelloun a accepté l'invitation pour prendre la Présidence d'Honneur de Teach for Morocco."
+      }
     }
+  },
+  "perspectives": {
+    "title": "PERSPECTIVES"
   }
 }

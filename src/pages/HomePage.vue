@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <HeroSection video-url="/assets/videos/BANK-OF-AFRICA-Our-Continent-Our-Future.mp4"
-            image-alt="BOA Rapport Annuel 2020" />
+            image-alt="BOA Rapport Annuel 2020" :title="$t('home.title')" />
 
         <!-- MOT DU PRESIDENT -->
         <section class="mot-president" data-aos="fade-up" data-aos-delay="200">
@@ -113,22 +113,25 @@
         <section id="performances" class="performances" data-aos="fade-up" data-aos-delay="400">
             <div class="performances-container">
                 <div class="performances-video" @click="openVideoModal">
-                    <video ref="performanceVideo" muted preload="metadata" poster="/assets/images/backgrounds/Video-BOA-uk.gif">
+                    <video ref="performanceVideo" muted preload="metadata"
+                        poster="/assets/images/backgrounds/Video-BOA-uk.gif">
                         <source src="/assets/videos/Video-BOA-2020-highlights-FINAL-1.mp4" type="video/mp4">
                         Votre navigateur ne supporte pas la lecture de vidéos.
                     </video>
                     <div class="video-overlay">
                         <div class="play-button">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
                             </svg>
                         </div>
                     </div>
                 </div>
                 <div class="performances-content">
-                    <h2 class="performances-title">{{ $t('home.performances.title', 'Performances & Réalisations') }}</h2>
+                    <h2 class="performances-title">{{ $t('home.performances.title', 'Performances & Réalisations') }}
+                    </h2>
                     <div class="performances-divider"></div>
-                    <p class="performances-text">{{ $t('home.performances.description', 'Découvrez nos performances exceptionnelles et réalisations marquantes de l\'année 2020. Bank of Africa continue de démontrer sa solidité financière et son engagement envers le développement économique du continent africain.') }}</p>
+                    <p class="performances-text">{{ $t('home.performances.description') }}</p>
                 </div>
             </div>
         </section>
@@ -183,7 +186,8 @@
             <div class="video-modal-content" @click.stop>
                 <button class="close-btn" @click="closeVideoModal">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <video ref="modalVideo" controls autoplay class="modal-video">
@@ -538,7 +542,7 @@ $white: white;
     position: relative;
     width: 100%;
     height: 12rem; // Hauteur fixe pour éviter le chevauchement
-    
+
     &::before,
     &::after {
         content: '';
@@ -549,12 +553,12 @@ $white: white;
         z-index: 2;
         pointer-events: none;
     }
-    
+
     &::before {
         left: 0;
         background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
     }
-    
+
     &::after {
         right: 0;
         background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent);
@@ -565,7 +569,7 @@ $white: white;
     display: flex;
     animation: scroll 40s linear infinite;
     height: 100%;
-    
+
     &:hover {
         animation-play-state: paused;
     }
@@ -579,7 +583,7 @@ $white: white;
     gap: 4rem;
     height: 100%;
     flex-shrink: 0; // Empêche la compression
-    
+
     @media (max-width: 768px) {
         gap: 2rem;
     }
@@ -591,15 +595,15 @@ $white: white;
     object-fit: contain;
     transition: all 0.3s ease;
     flex-shrink: 0;
-    
+
     &:hover {
         transform: scale(1.1);
     }
-    
+
     @media (max-width: 768px) {
         height: 6rem;
     }
-    
+
     @media (max-width: 480px) {
         height: 5rem;
     }
@@ -609,6 +613,7 @@ $white: white;
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -644,11 +649,11 @@ $white: white;
 
         &:hover {
             transform: scale(1.02);
-            
+
             .video-overlay {
                 background: rgba(0, 0, 0, 0.4);
             }
-            
+
             .play-button {
                 transform: scale(1.1);
             }
@@ -755,7 +760,7 @@ $white: white;
     @media (max-width: 768px) {
         width: 60px;
         height: 60px;
-        
+
         svg {
             width: 40px;
             height: 40px;
@@ -781,7 +786,7 @@ $white: white;
         max-width: 90vw;
         max-height: 90vh;
         width: 100%;
-        
+
         @media (min-width: 768px) {
             width: 80vw;
         }

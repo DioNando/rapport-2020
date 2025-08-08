@@ -1,7 +1,6 @@
 <template>
   <div class="mot-president-page">
-    <HeroSection image-url="/assets/images/backgrounds/othmane-benjelloun.png" image-alt="Mot du Président - BOA" />
-
+    <HeroSection image-url="/assets/images/backgrounds/othmane-benjelloun.png" image-alt="Mot du Président - BOA" :title="$t('motPresident.title')" :subtitle="$t('motPresident.subtitle')" />
     <div class="content-section" data-aos="fade-up" data-aos-delay="200">
       <!-- Contenu français -->
       <div v-if="currentLanguage === 'fr'" class="president-message">

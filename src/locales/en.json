@@ -21,6 +21,7 @@
     "readMore": "Read more"
   },
   "home": {
+    "title": "BANK OF AFRICA A GROUP UNDERGOING A GRADUAL TRANSFORMATION",
     "subtitle": "A modern Vue.js application with best practices",
     "learnMore": "Learn more",
     "features": "Features",
@@ -104,6 +105,8 @@
     "allRightsReserved": "All rights reserved."
   },
   "motPresident": {
+    "title": "Othman Benjelloun",
+    "subtitle": "Chairman & Chief Executive Officer",
     "paragraph1": "BANK OF AFRICA's wholehearted commitment to its stakeholders in Morocco and Africa is best illustrated by the exemplary manner in which it has responded to the historic COVID-19 pandemic. To deal with this unprecedented environment and its repercussions, strong and rapid responses have been provided by the Moroccan State under the high instructions of His Majesty King Mohammed VI. As one of Morocco's major banking groups, BANK OF AFRICA's response to the national emergency has been equally strong, notably through its contribution of one billion dirhams to the special fund for pandemic management.",
     "paragraph2": "Targeted support has thus been offered to the national economic fabric, particularly to VSMEs, through a global financing envelope of more than 14 billion dirhams and the provision of specific measures and adapted products to our customers.",
     "paragraph3": "While implementing exceptional measures to protect our employees and customers, we have also established a business continuity plan to reduce the impact of the crisis on our various businesses.",
@@ -112,14 +115,21 @@
     "paragraph6": "As a pioneer in digital banking, an essential component of banking and social inclusion, BANK OF AFRICA reaffirmed its position in 2020 as a banking group resolutely focused on the future, with the development of new scalable remote banking services. Our customers, individuals, professionals and businesses, both in Morocco and in several of our African countries of operation, have been able to benefit from various channels to carry out their operations and now have a range of simple and fluid innovative solutions, in a context where remote services have become essential."
   },
   "ambitionsOrientations": {
+    "title": "GOALS & STRATEGIC PRIORITIES",
     "content": "Driven by a deep-seated desire to contribute to the continent's development, BANK OF AFRICA has drawn up a set of strategic priorities that take into account current trends within the banking industry as well as learning from the various experiences brought about by the pandemic in 2020. Additional growth drivers include improving operational efficiency and bolstering risk management and recovery systems."
   },
   "creationValeur": {
+    "title": "VALUE CREATION & POSITIVE IMPACT FINANCE",
     "businessModelTitle": "Business model enabling the group to generate economic and social value across the continent",
     "csrStrategyTitle": "CSR strategy focusing on key priorities",
     "csrParagraph1": "For more than 25 years, BANK OF AFRICA has been committed to and contributed to initiatives promoting economic and social development, initially via BMCE Bank Foundation and subsequently via a proactive and ambitious CSR strategy.",
     "csrParagraph2": "BANK OF AFRICA has been at the forefront of banking institutions in Morocco and Africa in embracing CSR undertakings as growth drivers and catalysts for value generation. Adopting a concerted approach involving internal departments, non-financial performance experts and independent third parties, BANK OF AFRICA is entirely empathetic to the needs of each of its stakeholders and regularly assesses their expectations.",
     "foundationTitle": "BMCE BANK FOUNDATION IN 2020",
+    "foundationDescription": {
+      "title": "BMCE Bank foundation, an unrivalled commitment to education and the environment",
+      "paragraph1": "BANK OF AFRICA Group's commitment to the Kingdom's economic and social development is underpinned by a deep-seated belief that education plays a vital role in economic, social and cultural development. Established in 1995, its Foundation's primary aim is to support the actions of the public authorities in combating illiteracy, pupil drop-out and young girls not attending school. With this in mind, BMCE Bank Foundation for Education and the Environment provides pragmatic and long-term solutions to the challenges of providing education in the Kingdom's underprivileged areas and in those countries in which the Group has operations. Its actions are aimed at improving access to education and combating insecurity as a result of educational inequality in an era of digital development.",
+      "paragraph2": "Through its flagship Medersat.com programme which focuses on pre-school and primary education, more than 10,000 children in Morocco and sub-Saharan Africa are provided with an education."
+    },
     "businessModelImages": {
       "image1": {
         "alt": "Economic Value Creation"
@@ -133,6 +143,23 @@
       "image4": {
         "alt": "Continental Value Generation"
       }
+    },
+    "frenchLegion": {
+      "title": "THE FRENCH REPUBLIC'S LEGION D'HONNEUR",
+      "content": "Dr Leïla Mezian-Benjelloun, BMCE Bank Foundation's Chair, was awarded the Officer medal of the French Republic's Légion d'Honneur Tuesday 3 March 2020 in Rabat. This decoration was presented to her by France's Ambassador to Morocco, Mrs Hélène Le Gal, at a ceremony attended by several Moroccan and French dignitaries from the diplomatic, political and business world."
+    },
+    "awards": {
+      "africanAward": {
+        "title": "AFRICAN-NESS AWARD",
+        "content": "Dr Leila Mezian Benjelloun was honoured to receive the African-ness Award 2020 in recognition of her initiative, commitment and contribution to acknowledging the dignity of African men and women around the world. The African-ness Award was presented to her 23 November 2020 at the \"ICESCO Day for Africa - Perspectives and Potential\", organised jointly by ICESCO and the African-ness Award Foundation."
+      },
+      "teachMorocco": {
+        "title": "HONORARY PRESIDENT OF TEACH FOR MOROCCO",
+        "content": "Dr Leila Mezian Benjelloun has accepted an invitation to become Teach for Morocco's Honorary President."
+      }
     }
+  },
+  "perspectives": {
+    "title": "OUTLOOK"
   }
 }

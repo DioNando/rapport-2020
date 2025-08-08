@@ -1,9 +1,9 @@
 <template>
   <div class="ambitions-orientations-page">
     <HeroSection image-url="/assets/images/backgrounds/ID60b5e638cffab.png"
-      image-alt="Ambitions et Orientations - BOA" />
+      image-alt="Ambitions et Orientations - BOA" :title="$t('ambitionsOrientations.title')" />
     <div class="content">
-      <p class="content-text">{{ t('ambitionsOrientationsPage.content') }}</p>
+      <p class="content-text">{{ t('ambitionsOrientations.content') }}</p>
       <div class="content-divider"></div>
       
       <!-- Grille des 6 éléments -->

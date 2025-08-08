@@ -1,7 +1,6 @@
 <template>
   <div class="perspectives-page">
-    <HeroSection image-url="/assets/images/backgrounds/ID60b5e706060d3-1.png" image-alt="Perspectives - BOA" />
-
+    <HeroSection image-url="/assets/images/backgrounds/ID60b5e706060d3-1.png" image-alt="Perspectives - BOA" :title="$t('perspectives.title')" />
     <div class="content">
       <p class="content-text">{{ t('perspectivesPage.content') }}</p>
       <div class="content-divider"></div>
