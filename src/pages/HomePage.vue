@@ -33,11 +33,9 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 0 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'Shareholder structure' :
-                                'Actionnariat' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide1.title') }}</h2>
                             <div class="new-slide-divider"></div>
-                            <p class="new-slide-description">{{ locale === 'en' ? 'Shareholder structure at 31 may 2021' :
-                                'Répartition de l\'actionnariat à FIN MAI 2021' }}</p>
+                            <p class="new-slide-description">{{ $t('home.slides.slide1.description') }}</p>
                         </div>
                         <div class="new-slide-image">
                             <img src="/assets/images/slides/animation-graphe-V2-UK-1.gif" alt="">
@@ -58,11 +56,9 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 1 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'And Extensive Geographical Coverage' :
-                                'Et une large présence géographique' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide2.title') }}</h2>
                             <div class="new-slide-divider"></div>
-                            <p class="new-slide-description">{{ locale === 'en' ? 'BANK OF AFRICA is one of the continent\'s main pan-African financial groups. With an extensive portfolio of brands and subsidiaries, its universal banking business model has seen it diversify into a variety of business lines, including commercial banking, investment banking as well as specialised financial services' :
-                                'A travers ses différentes enseignes et filiales, BANK OF AFRICA est l\'un des principaux groupes financiers panafricains. Groupe Bancaire universel et multi-métiers, BANK OF AFRICA intervient dans des domaines aussi diversifiés que la banque commerciale, la banque d\'affaires, les services financiers spécialisés tels que le Leasing, le Factoring et le crédit de la consommation, outre la banque participative.' }}</p>
+                            <p class="new-slide-description">{{ $t('home.slides.slide2.description') }}</p>
                         </div>
                         <div class="new-slide-image">
                             <img src="/assets/images/slides/Et-une-large-presence-geographique-UK.gif">
@@ -83,11 +79,9 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 2 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A PAN-AFRICAN VOCATION' :
-                                'Une vocation panafricaine' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide3.title') }}</h2>
                             <div class="new-slide-divider"></div>
-                            <p class="new-slide-description">{{ locale === 'en' ? 'BANK OF AFRICA is today of Morocco\'s leading groups. It has the most extensive international and African network with 1,800 branches in 32 countries in Africa, Europe, Asia and North America. The Group employs more than 15,200 staff around the world, serving just under 6.6 million customers.' :
-                                'BANK OF AFRICA est aujourd\'hui l\'un des Groupes bancaires marocains affichant la plus importante couverture internationale et africaine, avec une présence dans 32 pays d\'Afrique, d\'Europe, d\'Asie et d\'Amérique du Nord. Le Groupe emploie plus de 15 200 collaborateurs à travers le monde, avec un réseau de plus de 1800 agences au services de près de 6,6 millions de clients.' }}</p>
+                            <p class="new-slide-description">{{ $t('home.slides.slide3.description') }}</p>
                         </div>
                         <div class="new-slide-image">
                             <img src="/assets/images/slides/Carte-Afrique-uk-1.gif">
@@ -108,26 +102,22 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 3 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'BANK OF AFRICA Contributing to the african continent\'s economic and social development for more than 60 years' :
-                                'BANQUE OF AFRICA Plus de 60 ans au service du développement économique et social du continent' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide4.title') }}</h2>
                                <div class="new-slide-subcontent">
                                  <div>
                                     <h2 class="new-slide-title">1959-1994</h2>
                                     <div class="new-slide-divider"></div>
-                                    <p class="new-slide-description">{{ locale === 'en' ? 'A BANK WITH GLOBAL ASPIRATIONS IS BORN' :
-                                'NAISSANCE D\'UNE BANQUE OUVERTE SUR LE MONDE' }}</p>
+                                    <p class="new-slide-description">{{ $t('home.slides.slide4.periods.p1.description') }}</p>
                                 </div>
                                 <div>
                                     <h2 class="new-slide-title">1995-2006</h2>
                                     <div class="new-slide-divider"></div>
-                                    <p class="new-slide-description">{{ locale === 'en' ? 'A UNIVERSAL BANK TO SUPPORT MOROCCO\'S DEVELOPMENT' :
-                                'BANQUE UNIVERSELLE AU SERVICE DU DÉVELOPPEMENT DU MAROC' }}</p>
+                                    <p class="new-slide-description">{{ $t('home.slides.slide4.periods.p2.description') }}</p>
                                 </div>
                                 <div>
                                     <h2 class="new-slide-title">2007-2020</h2>
                                     <div class="new-slide-divider"></div>
-                                    <p class="new-slide-description">{{ locale === 'en' ? 'PAN-AFRICAN AND INTERNATIONAL AMBITIONS' :
-                                'DES AMBITIONS PANAFRICAINES ET INTERNATIONALES' }}</p>
+                                    <p class="new-slide-description">{{ $t('home.slides.slide4.periods.p3.description') }}</p>
                                 </div>
                                </div>
                         </div>
@@ -147,11 +137,9 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 4 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A MEMBER OF O CAPITAL GROUP' :
-                                'Appartenance à O CAPITAL GROUP' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide5.title') }}</h2>
                             <div class="new-slide-divider"></div>
-                            <p class="new-slide-description">{{ locale === 'en' ? 'BANK OF AFRICA is a subsidiary of O CAPITAL GROUP, a private sector Morocann group, resulting from a merger between FinanceCom and Mezian Benjelloun Holdings. O CAPITAL GROUP\'s corporate name, which derives from the first name initial of its founder as well as the \'Enso\' Asian calligraphy character, embodies its global outlook and solidity whilst suggesting a sense of movement and creativity, hallmarks of its corporate identity' :
-                                'BANK OF AFRICA est filiale d\'O CAPITAL GROUP, fruit de la fusion absorption de FinanceCom par Holding Benjelloun Mezian. Avec une dénomination qui évoque à la fois l\'initial du nom de son fondateur et l\'art calligraphique asiatique du "Enso", O CAPITAL GROUP met en évidence son ouverture sur le mon et sa solidité et rappelle les notions de mouvement et créativité qui caractérisent son identité.' }}</p>
+                            <p class="new-slide-description">{{ $t('home.slides.slide5.description') }}</p>
                         </div>
                         <div class="new-slide-image">
                             <img src="/assets/images/slides/O-CAPITAL-GROUP.gif">
@@ -172,11 +160,9 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 5 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A socially responsible and committed banking group' :
-                                'Fondation BMCE BANK au service de l\'éducation et l\'environnement en Afrique' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide6.title') }}</h2>
                             <div class="new-slide-divider"></div>
-                            <p class="new-slide-description">{{ locale === 'en' ? 'BANK OF AFRICA Group\'s strong commitment to environmental issues and to social and societal responsibility began more than 25 years ago with its BMCE Bank Foundation. Today, BMCE Bank Foundation continues to innovate and implement educational, environmental and community development programmes, while providing significant support to African start-ups.' :
-                                'A travers sa Fondation BMCE Bank, le Group BANK OF AFRICA s\'est engagé depuis plus de 25 ans en faveur des questions liées à l\'environnement et à la réponsabilité sociale et environnementale. Aujourd\'hui, la Fondation BMCE Bank continue à innover et à implémenter des programmses dans les secteurs de l\'éducation, de l\'environnement et du développement communautaire, tout en apportant un soutien important aux start-ups africaines.' }}</p>
+                            <p class="new-slide-description">{{ $t('home.slides.slide6.description') }}</p>
                         </div>
                         <div class="new-slide-image">
                             <img src="/assets/images/slides/Fondation-BMCE-Bank.gif">
@@ -197,8 +183,7 @@
                 <div class="new-slide" :class="{ active: currentNewSlide === 6 }">
                     <div class="new-slide-content">
                         <div class="new-slide-text">
-                            <h2 class="new-slide-title">{{ locale === 'en' ? 'A ROBUST AND COMMITTED GOVERNANCE SYSTEM' :
-                                'Une gouvernance solide et engagée' }}</h2>
+                            <h2 class="new-slide-title">{{ $t('home.slides.slide7.title') }}</h2>
                             <div class="new-slide-divider"></div>
                         </div>
                     </div>

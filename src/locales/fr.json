@@ -41,6 +41,39 @@
     "performances": {
       "title": "Performances & Réalisations",
       "description": "La crise sanitaire ayant marqué l'année 2020 s'est accompagnée d'un fort ralentissement économique au niveau mondial, avec une résilience relative de certaines régions, telles que l'Afrique. Cette conjoncture particulière a impacté directement le secteur bancaire et a révélé la solidité financière des différents acteurs du système, qui ont su relever ce défi avec l'accompagnement prudent de l'autorité bancaire Bank Al-Maghrib. Par ailleurs, le développement soutenu du digital durant les dernières années a permis de transformer en profondeur les métiers de la Banque. Les différentes innovations mises en œuvre ont été un véritable atout dans la gestion de l'activité, dans un contexte de restriction de mobilité imposé par la crise sanitaire. À l'issu de cette année particulière, BANK OF AFRICA a démontré la solidité de ses fondamentaux et la pertinence de ses choix stratégiques en termes de diversification géographique et confirmé la justesse des choix technologiques réalisés auparavant."
+    },
+    "slides": {
+      "slide1": {
+        "title": "Actionnariat",
+        "description": "Répartition de l'actionnariat à FIN MAI 2021"
+      },
+      "slide2": {
+        "title": "Et une large présence géographique",
+        "description": "A travers ses différentes enseignes et filiales, BANK OF AFRICA est l'un des principaux groupes financiers panafricains. Groupe Bancaire universel et multi-métiers, BANK OF AFRICA intervient dans des domaines aussi diversifiés que la banque commerciale, la banque d'affaires, les services financiers spécialisés tels que le Leasing, le Factoring et le crédit de la consommation, outre la banque participative."
+      },
+      "slide3": {
+        "title": "Une vocation panafricaine",
+        "description": "BANK OF AFRICA est aujourd'hui l'un des Groupes bancaires marocains affichant la plus importante couverture internationale et africaine, avec une présence dans 32 pays d'Afrique, d'Europe, d'Asie et d'Amérique du Nord. Le Groupe emploie plus de 15 200 collaborateurs à travers le monde, avec un réseau de plus de 1800 agences au services de près de 6,6 millions de clients."
+      },
+      "slide4": {
+        "title": "BANQUE OF AFRICA Plus de 60 ans au service du développement économique et social du continent",
+        "periods": {
+          "p1": { "description": "NAISSANCE D'UNE BANQUE OUVERTE SUR LE MONDE" },
+          "p2": { "description": "BANQUE UNIVERSELLE AU SERVICE DU DÉVELOPPEMENT DU MAROC" },
+          "p3": { "description": "DES AMBITIONS PANAFRICAINES ET INTERNATIONALES" }
+        }
+      },
+      "slide5": {
+        "title": "Appartenance à O CAPITAL GROUP",
+        "description": "BANK OF AFRICA est filiale d'O CAPITAL GROUP, fruit de la fusion absorption de FinanceCom par Holding Benjelloun Mezian. Avec une dénomination qui évoque à la fois l'initial du nom de son fondateur et l'art calligraphique asiatique du \"Enso\", O CAPITAL GROUP met en évidence son ouverture sur le mon et sa solidité et rappelle les notions de mouvement et créativité qui caractérisent son identité."
+      },
+      "slide6": {
+        "title": "Fondation BMCE BANK au service de l'éducation et l'environnement en Afrique",
+        "description": "A travers sa Fondation BMCE Bank, le Group BANK OF AFRICA s'est engagé depuis plus de 25 ans en faveur des questions liées à l'environnement et à la réponsabilité sociale et environnementale. Aujourd'hui, la Fondation BMCE Bank continue à innover et à implémenter des programmses dans les secteurs de l'éducation, de l'environnement et du développement communautaire, tout en apportant un soutien important aux start-ups africaines."
+      },
+      "slide7": {
+        "title": "Une gouvernance solide et engagée"
+      }
     }
   },
   "about": {

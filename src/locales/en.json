@@ -41,6 +41,39 @@
     "performances": {
       "title": "Performance & Achievements",
       "description": "With events in 2020 dominated by the COVID-19 pandemic, economies around the world saw a sharp slowdown. A number of regions, including Africa, proved relatively resilient. The challenging operating environment also underlined the solidity of Morocco's financial system and that of its institutions which, supported by the country's banking authority, Bank Al-Maghrib, were successfully met. Furthermore, the Bank's business lines have undergone a transformation due to the development of digital banking. The various innovations made have proved a real asset in managing the business in a context of reduced mobility due to the pandemic. In what was an unprecedented year, BANK OF AFRICA's solid fundamentals and appropriate strategic choices in terms of geographic diversification were underlined, so too, its astuteness in the technological choices made previously."
+    },
+    "slides": {
+      "slide1": {
+        "title": "Shareholder structure",
+        "description": "Shareholder structure at 31 May 2021"
+      },
+      "slide2": {
+        "title": "And Extensive Geographical Coverage",
+        "description": "BANK OF AFRICA is one of the continent's main pan-African financial groups. With an extensive portfolio of brands and subsidiaries, its universal banking business model has seen it diversify into a variety of business lines, including commercial banking, investment banking as well as specialised financial services"
+      },
+      "slide3": {
+        "title": "A PAN-AFRICAN VOCATION",
+        "description": "BANK OF AFRICA is today of Morocco's leading groups. It has the most extensive international and African network with 1,800 branches in 32 countries in Africa, Europe, Asia and North America. The Group employs more than 15,200 staff around the world, serving just under 6.6 million customers."
+      },
+      "slide4": {
+        "title": "BANK OF AFRICA Contributing to the African continent's economic and social development for more than 60 years",
+        "periods": {
+          "p1": { "description": "A BANK WITH GLOBAL ASPIRATIONS IS BORN" },
+          "p2": { "description": "A UNIVERSAL BANK TO SUPPORT MOROCCO'S DEVELOPMENT" },
+          "p3": { "description": "PAN-AFRICAN AND INTERNATIONAL AMBITIONS" }
+        }
+      },
+      "slide5": {
+        "title": "A MEMBER OF O CAPITAL GROUP",
+        "description": "BANK OF AFRICA is a subsidiary of O CAPITAL GROUP, a private sector Morocann group, resulting from a merger between FinanceCom and Mezian Benjelloun Holdings. O CAPITAL GROUP's corporate name, which derives from the first name initial of its founder as well as the 'Enso' Asian calligraphy character, embodies its global outlook and solidity whilst suggesting a sense of movement and creativity, hallmarks of its corporate identity"
+      },
+      "slide6": {
+        "title": "A socially responsible and committed banking group",
+        "description": "BANK OF AFRICA Group's strong commitment to environmental issues and to social and societal responsibility began more than 25 years ago with its BMCE Bank Foundation. Today, BMCE Bank Foundation continues to innovate and implement educational, environmental and community development programmes, while providing significant support to African start-ups."
+      },
+      "slide7": {
+        "title": "A ROBUST AND COMMITTED GOVERNANCE SYSTEM"
+      }
     }
   },
   "about": {
